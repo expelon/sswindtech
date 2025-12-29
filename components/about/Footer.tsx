@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-6">
-              <h3 className="text-xl sm:text-2xl font-bold mb-3" style={{ color: '#395674' }}>
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 text-white">
                 sswindtech
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
@@ -39,7 +39,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6" style={{ color: '#395674' }}>
+            <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white">
               Quick Links
             </h4>
             <ul className="space-y-2 sm:space-y-3">
@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6" style={{ color: '#395674' }}>
+            <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white">
               Services
             </h4>
             <ul className="space-y-2 sm:space-y-3">
@@ -107,12 +107,12 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6" style={{ color: '#395674' }}>
+            <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white">
               Contact Us
             </h4>
             <div className="space-y-3 sm:space-y-4">
               <div className="flex items-start">
-                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0" style={{ color: '#395674' }} />
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0 text-white" />
                 <div>
                   <p className="text-gray-400 text-xs sm:text-sm">
                     123 Energy Lane<br />
@@ -123,14 +123,14 @@ export default function Footer() {
               </div>
               
               <div className="flex items-center">
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 flex-shrink-0" style={{ color: '#395674' }} />
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 flex-shrink-0 text-white" />
                 <a href="tel:+1234567890" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   +1 (234) 567-890
                 </a>
               </div>
               
               <div className="flex items-center">
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 flex-shrink-0" style={{ color: '#395674' }} />
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 flex-shrink-0 text-white" />
                 <a href="mailto:info@sswindtech.com" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   info@sswindtech.com
                 </a>
