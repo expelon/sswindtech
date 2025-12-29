@@ -72,19 +72,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-end gap-4 sm:gap-6 mt-24 sm:mt-32 lg:mt-48">
+        <div className="hidden lg:flex flex-col lg:flex-row items-center justify-center lg:justify-end gap-4 sm:gap-6 mt-24 sm:mt-32 lg:mt-48">
           <div className="max-w-[18rem] w-full lg:w-auto">
             <TrustSection />
           </div>
-          <div className="lg:hidden max-w-[16rem] w-full lg:w-auto text-center lg:text-left" style={{color: '#395674', textShadow: '1px 1px 2px rgba(255, 255, 255, 0.8)'}}>
-            <h3 className="text-xs sm:text-sm md:text-base font-semibold leading-snug">
-              Trusted by businesses and communities who want clean, reliable energy.
-            </h3>
-            <p className="mt-2 text-[11px] sm:text-xs leading-relaxed">
-              From small homes to large industries, our customers choose us for affordable and sustainable wind-powered solutions.
-            </p>
-          </div>
-          <div className="hidden lg:block max-w-[16rem] w-full lg:w-auto text-center lg:text-left" style={{color: '#395674'}}>
+          <div className="max-w-[16rem] w-full lg:w-auto text-center lg:text-left" style={{color: '#395674'}}>
             <h3 className="text-xs sm:text-sm md:text-base font-semibold leading-snug">
               Trusted by businesses and communities who want clean, reliable energy.
             </h3>
