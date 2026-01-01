@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Services() {
   return (
@@ -44,12 +45,12 @@ export default function Services() {
                     Our expert team assesses your energy needs and site conditions to recommend the perfect wind energy solution for your property.
                   </p>
                 </div>
-                <button className="px-3 sm:px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center justify-center gap-2 border border-gray-200 text-xs sm:text-sm hover:shadow-md transition-shadow mt-auto w-full sm:w-auto">
+                <Link href="/contact" className="px-3 sm:px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center justify-center gap-2 border border-gray-200 text-xs sm:text-sm hover:shadow-md transition-shadow mt-auto w-full sm:w-auto">
                   Get Started
                   <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#395674' }}>
                     <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 rotate-[-45deg]" style={{ color: 'white' }} />
                   </div>
-                </button>
+                </Link>
               </div>
 
               {/* Installation Card */}
@@ -62,12 +63,12 @@ export default function Services() {
                     Professional installation of windmill systems with minimal disruption, ensuring optimal performance and safety standards.
                   </p>
                 </div>
-                <button className="px-3 sm:px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center justify-center gap-2 border border-gray-200 text-xs sm:text-sm hover:shadow-md transition-shadow mt-auto w-full sm:w-auto">
+                <Link href="/contact" className="px-3 sm:px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center justify-center gap-2 border border-gray-200 text-xs sm:text-sm hover:shadow-md transition-shadow mt-auto w-full sm:w-auto">
                   Get Started
                   <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#395674' }}>
                     <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 rotate-[-45deg]" style={{ color: 'white' }} />
                   </div>
-                </button>
+                </Link>
               </div>
 
               {/* Maintenance Card */}
@@ -80,12 +81,12 @@ export default function Services() {
                     Regular maintenance and support services to keep your wind energy systems running at peak efficiency year-round.
                   </p>
                 </div>
-                <button className="px-3 sm:px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center justify-center gap-2 border border-gray-200 text-xs sm:text-sm hover:shadow-md transition-shadow mt-auto w-full sm:w-auto">
+                <Link href="/contact" className="px-3 sm:px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center justify-center gap-2 border border-gray-200 text-xs sm:text-sm hover:shadow-md transition-shadow mt-auto w-full sm:w-auto">
                   Get Started
                   <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#395674' }}>
                     <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 rotate-[-45deg]" style={{ color: 'white' }} />
                   </div>
-                </button>
+                </Link>
               </div>
             </div>
           </div>

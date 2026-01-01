@@ -2,28 +2,7 @@
 
 import Image from 'next/image';
 import { ArrowRight, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
-
-const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-  if (href.includes('#')) {
-    e.preventDefault();
-    const [path, hash] = href.split('#');
-    
-    // If we're not on the home page, navigate there first
-    if (window.location.pathname !== '/') {
-      window.location.href = href;
-      return;
-    }
-    
-    // Smooth scroll to the element
-    const element = document.getElementById(hash);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  }
-};
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -38,7 +17,7 @@ export default function Footer() {
                 sswindtech
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Leading the windmill revolution with advanced turbine technology and sustainable energy solutions for a cleaner tomorrow.
+                Leading wind mill service provider with expert maintenance, installation, and repair solutions for optimal renewable energy system performance.
               </p>
             </div>
             
@@ -66,29 +45,29 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <a href="/about" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#services" onClick={(e) => handleSmoothScroll(e, '/#services')} className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   Our Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -100,29 +79,29 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="/services#installation" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   Windmill Installation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="/services#maintenance" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   Maintenance & Support
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="/services#consulting" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   Energy Consulting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="/services#inspection" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   System Design
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="/services#monitoring" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   Performance Monitoring
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -170,15 +149,15 @@ export default function Footer() {
               © 2025 sswindtech. All rights reserved.
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 sm:gap-6 text-xs sm:text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                 Terms of Service
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              </Link>
+              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                 Cookie Policy
-              </a>
+              </Link>
             </div>
           </div>
         </div>
