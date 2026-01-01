@@ -11,9 +11,9 @@ export default function Services() {
         <div className="grid lg:grid-cols-8 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left Side - Large Image */}
           <div className="order-2 lg:order-1 lg:col-span-3">
-            <div className="relative h-64 sm:h-80 lg:h-[36rem] rounded-2xl overflow-hidden">
+            <div className="relative h-80 sm:h-96 lg:h-[36rem] rounded-2xl overflow-hidden">
               <Image 
-                src="/home2.webp" 
+                src="/wind3.webp" 
                 alt="Wind turbine energy solutions" 
                 fill 
                 className="object-cover"

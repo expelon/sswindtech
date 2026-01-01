@@ -79,28 +79,23 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link href="/services#installation" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Windmill Installation
+                <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                  Site Preparation & Ground Works
                 </Link>
               </li>
               <li>
-                <Link href="/services#maintenance" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Maintenance & Support
+                <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                  Mechanical & Electrical Installation
                 </Link>
               </li>
               <li>
-                <Link href="/services#consulting" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Energy Consulting
+                <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                  Annual Servicing & Maintenance
                 </Link>
               </li>
               <li>
-                <Link href="/services#inspection" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  System Design
-                </Link>
-              </li>
-              <li>
-                <Link href="/services#monitoring" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Performance Monitoring
+                <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                  WTG Operation & HT Line O&M
                 </Link>
               </li>
             </ul>

@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
             </p>
             <div className="relative h-48 rounded-xl overflow-hidden">
               <Image 
-                src="/p1.webp" 
+                src="/wind1.webp" 
                 alt="Wind turbines at sunset" 
                 fill 
                 className="object-cover"
@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
           <div className="order-2 lg:order-2">
             <div className="relative h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden">
               <Image 
-                src="/p2.webp" 
+                src="/wind.webp" 
                 alt="Modern windmill turbines in operation" 
                 fill 
                 className="object-cover"

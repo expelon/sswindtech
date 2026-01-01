@@ -8,21 +8,24 @@ export default function Testimonial() {
   const testimonials = [
     {
       quote: "Switching my home to wind energy was one of the best decisions I've made. Now, my home runs efficiently on clean energy, and I feel proud knowing my electricity use supports a sustainable future.",
-      author: "Emma Rahman",
-      title: "Homeowner, Cityville",
-      image: "/p1.webp",
+      author: "Priya Sharma",
+      title: "Homeowner, Mumbai",
+      profileImage: "/p1.webp",
+      backgroundImage: "/wind1.webp",
     },
     {
       quote: "The team at SS WindTech is exceptional. They guided us through every step and the maintenance service is outstanding. Our wind turbine runs perfectly year-round.",
-      author: "Sarah Johnson",
+      author: "Rajesh Kumar",
       title: "Business Owner",
-      image: "/p2.webp",
+      profileImage: "/p2.webp",
+      backgroundImage: "/wind4.webp",
     },
     {
       quote: "Installing a windmill from SS WindTech was the best decision for our manufacturing facility. Reliable power and significant cost savings. Excellent service!",
-      author: "Michael Chen",
+      author: "Anjali Patel",
       title: "Factory Manager",
-      image: "/home.webp",
+      profileImage: "/p3.webp",
+      backgroundImage: "/wind.webp",
     },
   ];
 
@@ -55,7 +58,7 @@ export default function Testimonial() {
             <div className="flex items-center justify-center lg:justify-start mb-6 sm:mb-8">
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden mr-3 sm:mr-4">
                 <Image 
-                  src={currentTestimonial.image} 
+                  src={currentTestimonial.profileImage} 
                   alt={currentTestimonial.author} 
                   width={48}
                   height={48}
@@ -88,7 +91,7 @@ export default function Testimonial() {
           <div className="w-full lg:w-1/2 order-1 lg:order-2">
             <div className="relative h-48 sm:h-64 lg:h-80 xl:h-96 rounded-xl sm:rounded-2xl overflow-hidden">
               <Image 
-                src={currentTestimonial.image} 
+                src={currentTestimonial.backgroundImage} 
                 alt={currentTestimonial.author} 
                 fill 
                 className="object-cover"
