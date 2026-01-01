@@ -1,18 +1,39 @@
 'use client';
 
 import { ArrowRight } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const navLinks = [
-  { name: 'Home', href: '#' },
-  { name: 'Solutions', href: '#solutions' },
-  { name: 'How It Works', href: '#how-it-works' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'About Us', href: '#about' },
+  { name: 'Home', href: '/' },
+  { name: 'Services', href: '/#services' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.includes('#')) {
+      e.preventDefault();
+      const [path, hash] = href.split('#');
+      
+      // If we're not on the home page, navigate there first
+      if (window.location.pathname !== '/') {
+        window.location.href = href;
+        return;
+      }
+      
+      // Smooth scroll to the element
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  };
 
   return (
     <nav className="absolute top-2 left-2 right-2 z-50 lg:top-8 lg:left-12 lg:right-12">
@@ -28,6 +49,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => handleSmoothScroll(e, link.href)}
                 className="hover:text-[#395674]/80 font-medium transition-colors duration-200 relative group" style={{color: '#395674'}}
               >
                 {link.name}
@@ -36,14 +58,14 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="hidden lg:block">
-            <button className="px-4 py-2.5 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-1.5 border border-gray-200 text-sm transition-all duration-300 hover:gap-2 group">
-              Get Started
-              <div className="w-6 h-6 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:rotate-45" style={{backgroundColor: '#395674'}}>
-                <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: 'white'}} />
-              </div>
+            <button className="hidden lg:block">
+              <a href="/contact" className="px-4 py-2.5 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-1.5 border border-gray-200 text-sm transition-all duration-300 hover:gap-2 group">
+                Get Started
+                <div className="w-6 h-6 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:rotate-45" style={{backgroundColor: '#395674'}}>
+                  <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: 'white'}} />
+                </div>
+              </a>
             </button>
-          </div>
 
           <button
             className="lg:hidden p-2 hover:text-[#395674]/80 transition-colors" style={{color: '#395674'}}
@@ -77,17 +99,22 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => {
+                  handleSmoothScroll(e, link.href);
+                  setIsMobileMenuOpen(false);
+                }}
                 className="block py-2 hover:text-[#395674]/80 font-medium transition-colors duration-200" style={{color: '#395674'}}
-                onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
               </a>
             ))}
             <button className="w-full px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center justify-center gap-2 border border-gray-200">
-              Get Started
-              <div className="w-5 h-5 rounded-full flex items-center justify-center" style={{backgroundColor: '#395674'}}>
-                <ArrowRight className="w-3 h-3 rotate-[-45deg]" style={{color: 'white'}} />
-              </div>
+              <a href="/contact" className="flex items-center gap-2 w-full justify-center">
+                Get Started
+                <div className="w-5 h-5 rounded-full flex items-center justify-center" style={{backgroundColor: '#395674'}}>
+                  <ArrowRight className="w-3 h-3 rotate-[-45deg]" style={{color: 'white'}} />
+                </div>
+              </a>
             </button>
           </div>
         </div>

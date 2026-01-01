@@ -3,6 +3,28 @@
 import Image from 'next/image';
 import { ArrowRight, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
+const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  if (href.includes('#')) {
+    e.preventDefault();
+    const [path, hash] = href.split('#');
+    
+    // If we're not on the home page, navigate there first
+    if (window.location.pathname !== '/') {
+      window.location.href = href;
+      return;
+    }
+    
+    // Smooth scroll to the element
+    const element = document.getElementById(hash);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+};
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
@@ -44,28 +66,28 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <a href="/about" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <a href="/contact" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="/#services" onClick={(e) => handleSmoothScroll(e, '/#services')} className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   Our Services
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Projects
+                  Privacy Policy
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  FAQ
+                  Terms of Service
                 </a>
               </li>
             </ul>

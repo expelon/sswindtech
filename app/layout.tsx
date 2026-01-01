@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'sswindTech' }],
   creator: 'sswindTech',
   publisher: 'sswindTech',
+  icons: {
+    icon: '/logo1.png',
+    shortcut: '/logo1.png',
+    apple: '/logo1.png',
+  },
   robots: {
     index: true,
     follow: true,

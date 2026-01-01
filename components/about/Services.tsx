@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Services() {
   return (
-    <section className="relative bg-white py-16 sm:py-20 lg:py-24">
+    <section id="services" className="relative bg-white py-16 sm:py-20 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingLeft: '3rem', paddingRight: '3rem' }}>
         <div className="grid lg:grid-cols-8 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left Side - Large Image */}

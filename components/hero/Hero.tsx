@@ -32,40 +32,54 @@ export default function Hero() {
 
               <div className="lg:hidden">
                 <p className="text-sm sm:text-base md:text-base max-w-md mx-auto lg:mx-0 leading-relaxed font-normal" style={{color: '#395674', textShadow: '1px 1px 3px rgba(255, 255, 255, 0.8)'}}>
-                  Harnessing the power of wind to deliver clean, sustainable energy solutions
-                  for a brighter tomorrow. Join us in revolutionizing the way the world powers itself.
+                  Providing expert wind mill services and maintenance solutions to ensure optimal performance
+                  and longevity of your wind energy systems. Partner with us for reliable, professional service that keeps your turbines running efficiently.
                 </p>
               </div>
               <div className="hidden lg:block">
                 <p className="text-sm sm:text-base md:text-base max-w-md mx-auto lg:mx-0 leading-relaxed font-normal" style={{color: '#395674'}}>
-                  Harnessing the power of wind to deliver clean, sustainable energy solutions
-                  for a brighter tomorrow. Join us in revolutionizing the way the world powers itself.
+                  Providing expert wind mill services and maintenance solutions to ensure optimal performance
+                  and longevity of your wind energy systems. Partner with us for reliable, professional service that keeps your turbines running efficiently.
                 </p>
               </div>
             </div>
 
             <div className="flex gap-4 justify-center lg:justify-start">
               <button className="hidden lg:inline-flex px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm items-center gap-2 border border-gray-200 text-base">
-                Get Started
-                <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{backgroundColor: '#395674'}}>
-                  <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: 'white'}} />
-                </div>
+                <a href="/contact" className="flex items-center gap-2">
+                  Get Started
+                  <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{backgroundColor: '#395674'}}>
+                    <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: 'white'}} />
+                  </div>
+                </a>
               </button>
 
-              <div className="lg:hidden">
+              <div className="lg:hidden flex gap-3">
+                <button className="px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm items-center gap-2 border border-gray-200 text-base">
+                  <a href="/contact" className="flex items-center gap-2">
+                    Get Started
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{backgroundColor: '#395674'}}>
+                      <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: 'white'}} />
+                    </div>
+                  </a>
+                </button>
                 <button className="px-4 py-2 bg-transparent text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 text-base" style={{border: '2px solid #395674', textShadow: '1px 1px 2px rgba(255, 255, 255, 0.8)'}}>
-                  Explore More
-                  <div className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent" style={{border: '2px solid #395674'}}>
-                    <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: '#395674'}} />
-                  </div>
+                  <a href="/contact" className="flex items-center gap-2">
+                    Explore More
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent" style={{border: '2px solid #395674'}}>
+                      <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: '#395674'}} />
+                    </div>
+                  </a>
                 </button>
               </div>
               <div className="hidden lg:block">
                 <button className="px-4 py-2 bg-transparent text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 text-base" style={{border: '2px solid #395674'}}>
-                  Explore More
-                  <div className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent" style={{border: '2px solid #395674'}}>
-                    <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: '#395674'}} />
-                  </div>
+                  <a href="/contact" className="flex items-center gap-2">
+                    Explore More
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent" style={{border: '2px solid #395674'}}>
+                      <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: '#395674'}} />
+                    </div>
+                  </a>
                 </button>
               </div>
             </div>
