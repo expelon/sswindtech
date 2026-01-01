@@ -2,7 +2,7 @@
 
 import Navbar from '@/components/hero/Navbar';
 import Footer from '@/components/about/Footer';
-import { Shield, Users, Wrench, Clock, Award, TrendingUp } from 'lucide-react';
+import { Shield, Users, Wrench, Clock, Award, TrendingUp, CheckCircle } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -23,101 +23,130 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Story */}
+      {/* Company Story */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{color: '#395674'}}>
                 Our Story
               </h2>
-              <p className="text-gray-600 mb-4 leading-relaxed">
-                Founded with a vision to support the growing wind energy industry, SSWindTech has become a leading service provider specializing in wind mill maintenance, repair, and optimization. We understand that the success of wind energy projects depends on reliable, professional service.
-              </p>
-              <p className="text-gray-600 mb-4 leading-relaxed">
-                Our team of certified technicians and engineers brings decades of combined experience in wind turbine technology, ensuring that your wind energy systems operate at peak efficiency and reliability.
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                We're not just service providers – we're partners in your renewable energy journey, committed to maximizing the performance and longevity of your wind energy investments.
-              </p>
             </div>
-            <div className="bg-gray-100 rounded-2xl p-8 text-center">
-              <div className="text-6xl font-bold mb-2" style={{color: '#395674'}}>10+</div>
-              <div className="text-gray-600">Years of Experience</div>
+            
+            <div className="prose prose-lg max-w-none">
+              <p className="text-gray-600 leading-relaxed mb-6">
+                <strong>SSWindTech</strong> was established in 2012 as an ISO 9001:2015 (QMS) and ISO 14001:2015 (EMS) certified organization. Our team brings <strong>20 years of experience</strong> in wind turbine installation and maintenance activities across different makes and capacities, from 55kw to 2.5MW WTGs.
+              </p>
+              
+              <p className="text-gray-600 leading-relaxed mb-6">
+                We focus and concentrate on complete customized solutions for wind power projects, right from preliminary wind studies, site selection, and liaison with government agencies to installation and successful operation and service support.
+              </p>
+              
+              <p className="text-gray-600 leading-relaxed mb-6">
+                The company stepped forward with a team of strong technically proficient Engineers for Installation and O&M personnel from different types of Wind Turbine manufacturers, from 0.25Mw to 2Mw WTGs, with strong technology for Rotor, Gearbox, and generator erection and de-erection with Winch systems.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Our Values */}
+      {/* Vision, Mission & Goals */}
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{color: '#395674'}}>
-              Our Values
-            </h2>
-            <p className="text-lg text-gray-600">The principles that guide everything we do</p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <Shield className="w-12 h-12 mb-4" style={{color: '#395674'}} />
-              <h3 className="text-xl font-semibold mb-3" style={{color: '#395674'}}>Safety First</h3>
-              <p className="text-gray-600">We prioritize the safety of our team, clients, and equipment in every service we provide.</p>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{color: '#395674'}}>
+                Our Vision, Mission & Goals
+              </h2>
             </div>
             
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <Users className="w-12 h-12 mb-4" style={{color: '#395674'}} />
-              <h3 className="text-xl font-semibold mb-3" style={{color: '#395674'}}>Customer Focus</h3>
-              <p className="text-gray-600">Your success is our success. We're committed to delivering exceptional service and support.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <Wrench className="w-12 h-12 mb-4" style={{color: '#395674'}} />
-              <h3 className="text-xl font-semibold mb-3" style={{color: '#395674'}}>Expertise</h3>
-              <p className="text-gray-600">Our certified technicians bring specialized knowledge and experience to every project.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <Clock className="w-12 h-12 mb-4" style={{color: '#395674'}} />
-              <h3 className="text-xl font-semibold mb-3" style={{color: '#395674'}}>Reliability</h3>
-              <p className="text-gray-600">We deliver consistent, dependable service that you can count on 24/7.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <Award className="w-12 h-12 mb-4" style={{color: '#395674'}} />
-              <h3 className="text-xl font-semibold mb-3" style={{color: '#395674'}}>Quality</h3>
-              <p className="text-gray-600">We maintain the highest standards in every aspect of our service delivery.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <TrendingUp className="w-12 h-12 mb-4" style={{color: '#395674'}} />
-              <h3 className="text-xl font-semibold mb-3" style={{color: '#395674'}}>Innovation</h3>
-              <p className="text-gray-600">We continuously improve our methods and adopt new technologies to better serve you.</p>
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Vision */}
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6 mx-auto" style={{backgroundColor: '#395674'}}>
+                  <TrendingUp className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-center" style={{color: '#395674'}}>Our Vision</h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  To be a global renewable energy leader in customer satisfaction through service and sustainability.
+                </p>
+              </div>
+              
+              {/* Mission */}
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6 mx-auto" style={{backgroundColor: '#395674'}}>
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-center" style={{color: '#395674'}}>Our Mission</h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  Highest priority to Safety, Quality of Product, External & Internal Customer Satisfaction.
+                </p>
+              </div>
+              
+              {/* Goals */}
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6 mx-auto" style={{backgroundColor: '#395674'}}>
+                  <Award className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-center" style={{color: '#395674'}}>Our Goals</h3>
+                <ul className="text-gray-600 space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Increase profit through quality as well as risk management</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Maintain minimum manpower to control site activity</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Ensure Zero-Deviation-Strategy in all processes</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Ensure open-minded and honest communication based on facts internally and externally</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Ensure continuous improvements (CIMS)</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Expertise Section */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl sm:text-5xl font-bold mb-2" style={{color: '#395674'}}>500+</div>
-              <div className="text-gray-600">Wind Mills Serviced</div>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{color: '#395674'}}>
+                Our Expertise
+              </h2>
+              <p className="text-lg text-gray-600">
+                Comprehensive wind energy solutions backed by decades of experience
+              </p>
             </div>
-            <div>
-              <div className="text-4xl sm:text-5xl font-bold mb-2" style={{color: '#395674'}}>98%</div>
-              <div className="text-gray-600">Customer Satisfaction</div>
-            </div>
-            <div>
-              <div className="text-4xl sm:text-5xl font-bold mb-2" style={{color: '#395674'}}>24/7</div>
-              <div className="text-gray-600">Emergency Support</div>
-            </div>
-            <div>
-              <div className="text-4xl sm:text-5xl font-bold mb-2" style={{color: '#395674'}}>50+</div>
-              <div className="text-gray-600">Certified Technicians</div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>20+</div>
+                <div className="text-gray-600">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>55kW</div>
+                <div className="text-gray-600">to 2.5MW Capacity</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>ISO</div>
+                <div className="text-gray-600">9001:2015 & 14001:2015</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>100%</div>
+                <div className="text-gray-600">Customer Satisfaction</div>
+              </div>
             </div>
           </div>
         </div>
