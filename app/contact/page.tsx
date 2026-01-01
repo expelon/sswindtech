@@ -4,6 +4,7 @@ import Navbar from '@/components/hero/Navbar';
 import Footer from '@/components/about/Footer';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -31,9 +32,20 @@ export default function ContactPage() {
     <div className="min-h-screen bg-white">
       <Navbar />
       
-      {/* Hero Section - Simplified */}
-      <section className="relative py-24 lg:py-32 bg-gradient-to-br from-slate-50 to-gray-50">
-        <div className="container mx-auto px-6 lg:px-8">
+      {/* Hero Section */}
+      <section className="relative h-screen flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/contact.webp" 
+            alt="Contact background" 
+            fill 
+            className="object-cover"
+          />
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{color: '#395674'}}>
               Get in Touch
