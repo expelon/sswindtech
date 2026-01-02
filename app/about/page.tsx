@@ -194,18 +194,42 @@ export default function AboutPage() {
             </div>
             
             <div className="space-y-12">
-              {/* Mr. Sivakumar */}
+              {/* Mr. Sundar Murthy */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative h-64 md:h-auto md:aspect-square overflow-hidden">
                     <Image 
-                      src="/sivakumar.jpeg" 
-                      alt="Mr. Sivakumar" 
+                      src="/sundhar.jpeg" 
+                      alt="Mr. Sundar Murthy" 
                       fill 
-                      className="object-cover object-top"
+                      className="object-cover"
                     />
                   </div>
                   <div className="p-8 flex flex-col justify-center">
+                    <h3 className="text-2xl font-bold mb-2" style={{color: '#395674'}}>Mr. Sundar Murthy</h3>
+                    <p className="text-gray-600 mb-4 font-medium">Managing Director</p>
+                    <div className="prose prose-sm max-w-none text-gray-600 leading-relaxed">
+                      <p className="mb-4">
+                        Mr. Sundar Murthy, Managing Director, is guiding force behind company's vision and direction. He provides strong leadership that keeps organization steady during both growth phases and challenging times. With clear strategic thinking, he ensures company remains stable in a dynamic and competitive environment.
+                      </p>
+                      <p className="mb-4">
+                        His ability to make timely and well-informed decisions strengthens the company's foundation. He carefully balances risk and opportunity to protect long-term business interests. Through disciplined management, he maintains operational efficiency across all departments.
+                      </p>
+                      <p className="mb-4">
+                        Mr. Sundar Murthy strongly believes that teamwork is the backbone of organizational success. He actively guides, mentors, and motivates employees at all levels. His leadership style encourages transparency, trust, and mutual respect.
+                      </p>
+                      <p>
+                        He empowers teams to take responsibility and deliver their best performance. By aligning individual goals with company objectives, he builds a unified workforce. His vision and commitment continue to play a vital role in company's long-term success.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Mr. Sivakumar */}
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-0">
+                  <div className="p-8 flex flex-col justify-center order-2 md:order-1">
                     <h3 className="text-2xl font-bold mb-2" style={{color: '#395674'}}>Mr. Sivakumar</h3>
                     <p className="text-gray-600 mb-4 font-medium">Technical Director</p>
                     <div className="prose prose-sm max-w-none text-gray-600 leading-relaxed">
@@ -220,36 +244,12 @@ export default function AboutPage() {
                       </p>
                     </div>
                   </div>
-                </div>
-              </div>
-              
-              {/* Mr. Sundar Murthy */}
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div className="grid md:grid-cols-2 gap-0">
-                  <div className="p-8 flex flex-col justify-center order-2 md:order-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{color: '#395674'}}>Mr. Sundar Murthy</h3>
-                    <p className="text-gray-600 mb-4 font-medium">Managing Director</p>
-                    <div className="prose prose-sm max-w-none text-gray-600 leading-relaxed">
-                      <p className="mb-4">
-                        Mr. Sundar Murthy, the Managing Director, is the guiding force behind the company's vision and direction. He provides strong leadership that keeps the organization steady during both growth phases and challenging times. With clear strategic thinking, he ensures the company remains stable in a dynamic and competitive environment.
-                      </p>
-                      <p className="mb-4">
-                        His ability to make timely and well-informed decisions strengthens the company's foundation. He carefully balances risk and opportunity to protect long-term business interests. Through disciplined management, he maintains operational efficiency across all departments.
-                      </p>
-                      <p className="mb-4">
-                        Mr. Sundar Murthy strongly believes that teamwork is the backbone of organizational success. He actively guides, mentors, and motivates employees at all levels. His leadership style encourages transparency, trust, and mutual respect.
-                      </p>
-                      <p>
-                        He empowers teams to take responsibility and deliver their best performance. By aligning individual goals with company objectives, he builds a unified workforce. His vision and commitment continue to play a vital role in the company's long-term success.
-                      </p>
-                    </div>
-                  </div>
                   <div className="relative h-80 md:h-auto md:aspect-square overflow-hidden order-1 md:order-2">
                     <Image 
-                      src="/sundhar.jpeg" 
-                      alt="Mr. Sundar Murthy" 
+                      src="/sivakumar.jpeg" 
+                      alt="Mr. Sivakumar" 
                       fill 
-                      className="object-cover"
+                      className="object-cover object-top"
                     />
                   </div>
                 </div>
