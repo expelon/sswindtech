@@ -16,7 +16,7 @@ export default function Testimonial() {
     {
       quote: "The team at SS WindTech is exceptional. They guided us through every step and the maintenance service is outstanding. Our wind turbine runs perfectly year-round.",
       author: "Rajesh Kumar",
-      title: "Business Owner",
+      title: "Managing Director",
       profileImage: "/p2.webp",
       backgroundImage: "/wind4.webp",
     },
