@@ -5,6 +5,8 @@ import { ArrowRight, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram
 import Link from 'next/link';
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer Content */}
@@ -141,7 +143,7 @@ export default function Footer() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6" style={{ paddingLeft: '1.5rem', paddingRight: '1.5rem' }}>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
             <div className="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
-              © 2025 sswindtech. All rights reserved.
+              © {currentYear} sswindtech. All rights reserved.
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 sm:gap-6 text-xs sm:text-sm">
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">
