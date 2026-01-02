@@ -16,7 +16,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/wind1.webp" 
-            alt="SSWindTech background" 
+            alt="SS Wind Tech background" 
             fill 
             className="object-cover"
           />
@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6" style={{color: '#395674'}}>
-              About SSWindTech
+              About SS Wind Tech
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
               Your trusted partner in professional wind mill services, maintenance, and optimization solutions.
@@ -47,7 +47,7 @@ export default function AboutPage() {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 leading-relaxed mb-6">
-                <strong>SSWindTech</strong> was established in 2012 as an ISO 9001:2015 (QMS) and ISO 14001:2015 (EMS) certified organization. Our team brings <strong>20 years of experience</strong> in wind turbine installation and maintenance activities across different makes and capacities, from 55kw to 2.5MW WTGs.
+                <strong>SS Wind Tech</strong> was established in 2012 as an ISO 9001:2015 (QMS) and ISO 14001:2015 (EMS) certified organization. Our team brings <strong>20 years of experience</strong> in wind turbine installation and maintenance activities across different makes and capacities, from 55kw to 2.5MW WTGs.
               </p>
               
               <p className="text-gray-600 leading-relaxed mb-6">

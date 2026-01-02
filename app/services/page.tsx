@@ -48,7 +48,7 @@ export default function ServicesPage() {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 leading-relaxed mb-6">
-                <strong>SSWindTech</strong> is focused entirely on the service side of wind development. We do not sell wind turbines and instead offer a 'cradle to grave' support packages to all our customers depending on their individual needs and on-site requirements.
+                <strong>SS Wind Tech</strong> is focused entirely on the service side of wind development. We do not sell wind turbines and instead offer a 'cradle to grave' support packages to all our customers depending on their individual needs and on-site requirements.
               </p>
               
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -229,7 +229,7 @@ export default function ServicesPage() {
               Ready to Discuss Your Wind Energy Project?
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Please feel free to browse through the different categories where further information is available as well as photos from projects we have been involved with in the past. If you can't find what you're looking for, please call or email SSWindTech and we will be delighted to help with your project.
+              Please feel free to browse through the different categories where further information is available as well as photos from projects we have been involved with in the past. If you can't find what you're looking for, please call or email SS Wind Tech and we will be delighted to help with your project.
             </p>
             <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 text-white font-semibold rounded-lg transition-colors duration-300 hover:shadow-lg transform hover:-translate-y-0.5" style={{backgroundColor: '#395674'}}>
               Contact Us Today

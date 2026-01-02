@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sswindtech.com'),
-  title: 'sswindTech | Wind Energy & Windmill Solutions',
+  title: 'SS Wind Tech | Wind Energy & Windmill Solutions',
   description:
-    'sswindTech is a renewable energy company specializing in windmill and wind energy solutions. We deliver sustainable, efficient, and future-ready wind power technologies.',
+    'SS Wind Tech is a renewable energy company specializing in windmill and wind energy solutions. We deliver sustainable, efficient, and future-ready wind power technologies.',
   keywords: [
-    'sswindTech',
+    'SS Wind Tech',
     'windmill company',
     'wind energy solutions',
     'renewable energy',
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     'clean energy',
     'wind turbine',
   ],
-  authors: [{ name: 'sswindTech' }],
-  creator: 'sswindTech',
-  publisher: 'sswindTech',
+  authors: [{ name: 'SS Wind Tech' }],
+  creator: 'SS Wind Tech',
+  publisher: 'SS Wind Tech',
   icons: {
     icon: '/logo1.png',
     shortcut: '/logo1.png',
@@ -33,25 +33,25 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: 'sswindTech | Wind Energy & Windmill Solutions',
+    title: 'SS Wind Tech | Wind Energy & Windmill Solutions',
     description:
-      'sswindTech provides innovative wind energy and windmill solutions for a sustainable future.',
+      'SS Wind Tech provides innovative wind energy and windmill solutions for a sustainable future.',
     url: 'https://sswindtech.com',
-    siteName: 'sswindTech',
+    siteName: 'SS Wind Tech',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'sswindTech - Wind Energy Solutions',
+        alt: 'SS Wind Tech - Wind Energy Solutions',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'sswindTech | Wind Energy & Windmill Solutions',
-    description: 'Renewable wind energy and windmill solutions by sswindTech.',
+    title: 'SS Wind Tech | Wind Energy & Windmill Solutions',
+    description: 'Renewable wind energy and windmill solutions by SS Wind Tech.',
     images: ['/og-image.png'],
   },
 };

@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="container mx-auto px-0">
           <div className="flex items-center justify-between h-12 lg:h-14 px-3 lg:px-6">
             <span className="text-xl sm:text-2xl font-bold" style={{color: '#395674'}}>
-              sswindtech
+              SS Wind Tech
             </span>
 
           <div className="hidden lg:flex items-center gap-8 flex-1 justify-center">
