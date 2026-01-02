@@ -2,7 +2,7 @@
 
 import Navbar from '@/components/hero/Navbar';
 import Footer from '@/components/about/Footer';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -187,12 +187,26 @@ export default function ContactPage() {
                 <div className="space-y-8">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style={{backgroundColor: '#395674'}}>
+                      <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-white">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">WhatsApp</h3>
+                      <a href="https://wa.me/918098495874" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
+                        +91 80984 95874
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style={{backgroundColor: '#395674'}}>
                       <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-2 text-gray-900">Phone</h3>
-                      <p className="text-gray-600">+1 (234) 567-890</p>
-                      <p className="text-gray-600">+1 (234) 567-891</p>
+                      <p className="text-gray-600">+91 97507 24822</p>
+                      <p className="text-gray-600">+91 80984 95864</p>
                     </div>
                   </div>
                   
@@ -202,8 +216,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-2 text-gray-900">Email</h3>
-                      <p className="text-gray-600">info@sswindtech.com</p>
-                      <p className="text-gray-600">support@sswindtech.com</p>
+                      <p className="text-gray-600">sswindtechindia@gmail.com</p>
                     </div>
                   </div>
                   
@@ -214,33 +227,16 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2 text-gray-900">Office</h3>
                       <p className="text-gray-600">
-                        123 Energy Lane<br />
-                        Green City, GC 12345<br />
-                        United States
+                        3/437 B Nallipoombugar Nagar<br />
+                        Near RKR School, Tiruppur Rd<br />
+                        Udumalpet - 642 126<br />
+                        Tiruppur Dt, Tamilnadu
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Business Hours Card */}
-                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-                  <h3 className="font-semibold text-lg mb-4 text-gray-900">Business Hours</h3>
-                  <div className="space-y-2 text-gray-600">
-                    <div className="flex justify-between">
-                      <span>Monday - Friday</span>
-                      <span>8:00 AM - 6:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday</span>
-                      <span>9:00 AM - 4:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Sunday</span>
-                      <span>Closed</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                              </div>
             </div>
           </div>
         </div>
