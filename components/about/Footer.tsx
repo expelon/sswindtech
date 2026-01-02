@@ -47,6 +47,11 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
+                <Link href="/" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                  Home
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   About Us
                 </Link>
@@ -62,13 +67,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Terms of Service
+                <Link href="/cookie-policy" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
+                  Cookie Policy
                 </Link>
               </li>
             </ul>
@@ -163,13 +168,10 @@ export default function Footer() {
               © {currentYear} SS Wind Tech. All rights reserved.
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 sm:gap-6 text-xs sm:text-sm">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                Terms of Service
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="/cookie-policy" className="text-gray-400 hover:text-white transition-colors">
                 Cookie Policy
               </Link>
             </div>
