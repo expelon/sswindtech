@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -21,9 +22,20 @@ export default function Navbar() {
       <div className="bg-transparent lg:border lg:border-white/50 lg:shadow-lg lg:rounded-full">
         <div className="container mx-auto px-0">
           <div className="flex items-center justify-between h-12 lg:h-14 px-3 lg:px-6">
-            <span className="text-xl sm:text-2xl font-bold" style={{color: '#395674'}}>
-              SS Wind Tech
-            </span>
+            <div className="flex items-center gap-0">
+              <div className="relative w-12 h-12 lg:w-16 lg:h-16">
+                <Image 
+                  src="/logo2.png" 
+                  alt="SS Wind Tech Logo" 
+                  fill 
+                  className="object-contain"
+                  sizes="64px"
+                />
+              </div>
+              <span className="text-xl sm:text-2xl font-bold" style={{color: '#395674'}}>
+                SS Wind Tech
+              </span>
+            </div>
 
           <div className="hidden lg:flex items-center gap-8 flex-1 justify-center">
             {navLinks.map((link) => (
