@@ -3,10 +3,12 @@
 import Navbar from '@/components/hero/Navbar';
 import Footer from '@/components/about/Footer';
 import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 
 export default function ContactPage() {
+  const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,6 +16,17 @@ export default function ContactPage() {
     service: '',
     message: ''
   });
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  useEffect(() => {
+    if (searchParams.get('success') === 'true') {
+      setShowSuccess(true);
+      // Clear the URL parameter
+      window.history.replaceState({}, '', '/contact');
+      // Hide success message after 5 seconds
+      setTimeout(() => setShowSuccess(false), 5000);
+    }
+  }, [searchParams]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -24,8 +37,7 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
+    // Formsubmit.co will handle the submission automatically
   };
 
   return (
@@ -65,14 +77,37 @@ export default function ContactPage() {
               
               {/* Contact Form - Premium Styling */}
               <div className="space-y-8">
+                {/* Success Message */}
+                {showSuccess && (
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-4 flex items-center space-x-3">
+                    <div className="flex-shrink-0">
+                      <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-green-800 font-semibold">Message Sent Successfully!</h3>
+                      <p className="text-green-700 text-sm">Thank you for contacting us. We'll respond to your inquiry soon.</p>
+                    </div>
+                  </div>
+                )}
+                
                 <div>
                   <h2 className="text-3xl lg:text-4xl font-bold mb-4 tracking-tight" style={{color: '#395674'}}>
                     Send us a Message
                   </h2>
-                  <p className="text-gray-600 text-lg">We'll get back to you within 24 hours</p>
                 </div>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form 
+                  action="https://formsubmit.co/sswindtechindia@gmail.com" 
+                  method="POST"
+                  className="space-y-6"
+                >
+                  {/* Formsubmit.co hidden fields */}
+                  <input type="hidden" name="_subject" value="New Contact Form Submission from SS Wind Tech Website" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_next" value={`${typeof window !== 'undefined' ? window.location.origin : ''}/contact?success=true`} />
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-700">
