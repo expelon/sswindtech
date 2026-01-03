@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -23,15 +23,15 @@ export default function Navbar() {
     <nav className="absolute top-2 left-2 right-2 z-50 lg:top-8 lg:left-12 lg:right-12">
       <div className="bg-transparent lg:border lg:border-white/50 lg:shadow-lg lg:rounded-full">
         <div className="container mx-auto px-0">
-          <div className="flex items-center justify-between h-12 lg:h-14 px-3 lg:px-6">
+          <div className="flex items-center justify-between h-20 sm:h-24 lg:h-20 px-3 lg:px-6">
             <div className="flex items-center gap-0">
-              <div className="relative w-12 h-12 lg:w-16 lg:h-16">
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 lg:w-24 lg:h-24">
                 <Image 
                   src="/logo2.png" 
                   alt="SS Wind Tech Logo" 
                   fill 
                   className="object-contain"
-                  sizes="64px"
+                  sizes="(max-width: 640px) 80px, (max-width: 1024px) 88px, 96px"
                 />
               </div>
               <span className="text-xl sm:text-2xl font-bold" style={{color: '#395674'}}>
@@ -61,28 +61,29 @@ export default function Navbar() {
             ))}
           </div>
 
-            <div className="hidden lg:block">
+            <div className="hidden lg:flex items-center gap-3">
+              <div className="relative">
+                <select
+                  value={locale}
+                  onChange={(e) => setLocale(e.target.value as Locale)}
+                  className="appearance-none bg-transparent backdrop-blur-sm border border-white/60 rounded-full pl-4 pr-10 py-2 text-sm font-semibold text-gray-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#395674]/30 focus:border-[#395674]/40 transition-colors"
+                  aria-label={t('nav.language')}
+                >
+                  {(Object.keys(localeNames) as Locale[]).map((code) => (
+                    <option key={code} value={code}>
+                      {localeNames[code]}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4" style={{ color: '#395674' }} />
+              </div>
+
               <Link href="/contact" className="px-4 py-2.5 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-1.5 border border-gray-200 text-sm transition-all duration-300 hover:gap-2 group">
                 {t('nav.getStarted')}
                 <div className="w-6 h-6 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:rotate-45" style={{backgroundColor: '#395674'}}>
                   <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: 'white'}} />
                 </div>
               </Link>
-            </div>
-
-            <div className="hidden lg:flex items-center">
-              <select
-                value={locale}
-                onChange={(e) => setLocale(e.target.value as Locale)}
-                className="bg-white/80 border border-gray-200 rounded-full px-3 py-2 text-sm font-medium text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                aria-label={t('nav.language')}
-              >
-                {(Object.keys(localeNames) as Locale[]).map((code) => (
-                  <option key={code} value={code}>
-                    {localeNames[code]}
-                  </option>
-                ))}
-              </select>
             </div>
 
           <button
