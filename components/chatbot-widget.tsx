@@ -33,6 +33,7 @@ export function ChatbotWidget() {
   const [awaitingUserInput, setAwaitingUserInput] = useState(false)
   const [currentContext, setCurrentContext] = useState<string>('')
   const [suggestedQuestions, setSuggestedQuestions] = useState<QuickReply[]>([])
+  const [showAllQuestions, setShowAllQuestions] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
   const scrollToBottom = () => {
@@ -484,8 +485,8 @@ export function ChatbotWidget() {
       }
     }
     
-    // Default Response with more suggestions
-    return "I'm here to help with SS Wind Tech's wind energy solutions! Here are some common questions you might be interested in:\n\n• What services do you offer?\n• How can I contact you?\n• Where do you provide services?\n• Do you provide emergency support?\n\nYou can also ask me anything specific about wind energy solutions. How can I assist you today?"
+    // Default Response for unknown questions
+    return "I'd like to help you with that! Sometimes questions might have typos or different wording. Could you try rephrasing your question, or perhaps you meant one of these topics:\n\n• Our wind energy services and maintenance\n• Company information and leadership team\n• Service areas across India\n• Contact details and emergency support\n• Technical specifications and certifications\n\nYou can also type keywords like: services, contact, about, areas, or emergency\n\nOr choose from the suggested questions below. If you need specific technical details, our team is available at +91 80984 95874.\n\nWhat would you like to know about our wind energy solutions?"
   }
 
   const handleQuickReply = (action: string) => {
@@ -566,7 +567,7 @@ export function ChatbotWidget() {
         const suggestions = getSuggestedQuestions(response, currentContext)
         setSuggestedQuestions(suggestions)
       }
-    }, 1000)
+    }, 1500)
   }
 
   if (!isOpen) {
@@ -630,30 +631,61 @@ export function ChatbotWidget() {
             {index > 0 && !message.isUser && suggestedQuestions.length > 0 && (
               <div className="mt-3 space-y-2">
                 <p className="text-xs text-gray-500 font-medium mb-2">Suggested Questions:</p>
-                {suggestedQuestions.map((reply) => (
-                  <button
-                    key={reply.id}
-                    onClick={() => handleQuickReply(reply.action)}
-                    disabled={isTyping}
-                    className="w-full px-3 py-2 text-xs bg-blue-50 border border-blue-200 rounded-full hover:bg-blue-100 hover:border-blue-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-left"
-                  >
-                    {reply.text}
-                  </button>
-                ))}
+                {!showAllQuestions ? (
+                  <>
+                    {suggestedQuestions.slice(0, 2).map((reply) => (
+                      <button
+                        key={reply.id}
+                        onClick={() => handleQuickReply(reply.action)}
+                        disabled={isTyping}
+                        className="w-full px-3 py-2 text-xs bg-blue-50 border border-blue-200 rounded-full hover:bg-blue-100 hover:border-blue-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-left"
+                      >
+                        {reply.text}
+                      </button>
+                    ))}
+                    <button
+                      onClick={() => setShowAllQuestions(true)}
+                      disabled={isTyping}
+                      className="w-full px-3 py-2 text-xs bg-gray-50 border border-gray-300 rounded-full hover:bg-gray-100 hover:border-gray-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-left font-medium"
+                    >
+                      View More Questions →
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    {[...suggestedQuestions, ...[...quickReplies, ...commonQuestions].filter(q => !suggestedQuestions.find(sq => sq.id === q.id))].slice(0, 5).map((reply) => (
+                      <button
+                        key={reply.id}
+                        onClick={() => handleQuickReply(reply.action)}
+                        disabled={isTyping}
+                        className="w-full px-3 py-2 text-xs bg-blue-50 border border-blue-200 rounded-full hover:bg-blue-100 hover:border-blue-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-left"
+                      >
+                        {reply.text}
+                      </button>
+                    ))}
+                    <button
+                      onClick={() => setShowAllQuestions(false)}
+                      disabled={isTyping}
+                      className="w-full px-3 py-2 text-xs bg-gray-50 border border-gray-300 rounded-full hover:bg-gray-100 hover:border-gray-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-left font-medium"
+                    >
+                      Show Less ←
+                    </button>
+                  </>
+                )}
               </div>
             )}
           </div>
         ))}
         {isTyping && (
-          <div className="flex gap-3 max-w-[80%]">
-            <div className="w-10 h-10 rounded-full flex items-center justify-center text-white text-base font-medium" style={{ backgroundColor: '#395674' }}>
+          <div className="flex gap-2 max-w-[80%]">
+            <div className="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-medium" style={{ backgroundColor: '#395674' }}>
               B
             </div>
-            <div className="rounded-2xl px-6 py-3 rounded-bl-sm" style={{ backgroundColor: '#e8eef2' }}>
-              <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full animate-bounce" style={{ backgroundColor: '#395674' }}></div>
-                <div className="w-3 h-3 rounded-full animate-bounce" style={{ animationDelay: "0.1s", backgroundColor: '#395674' }}></div>
-                <div className="w-3 h-3 rounded-full animate-bounce" style={{ animationDelay: "0.2s", backgroundColor: '#395674' }}></div>
+            <div className="rounded-2xl px-4 py-2 rounded-bl-sm flex items-center justify-center" style={{ backgroundColor: '#e8eef2' }}>
+              <div className="flex gap-1 items-center">
+                <div className="w-2 h-2 rounded-full animate-bounce" style={{ backgroundColor: '#395674', animationDuration: '0.8s' }}></div>
+                <div className="w-2 h-2 rounded-full animate-bounce" style={{ animationDelay: "0.2s", backgroundColor: '#395674', animationDuration: '0.8s' }}></div>
+                <div className="w-2 h-2 rounded-full animate-bounce" style={{ animationDelay: "0.4s", backgroundColor: '#395674', animationDuration: '0.8s' }}></div>
               </div>
             </div>
           </div>
