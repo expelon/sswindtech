@@ -2,18 +2,21 @@
 
 import Image from 'next/image';
 import { ArrowRight, Wind, Zap, Shield, Leaf } from 'lucide-react';
+import { useI18n } from '@/lib/i18n';
 
 export default function WhyChooseUs() {
+  const { t } = useI18n();
+
   return (
     <section className="relative bg-gray-50 py-16 sm:py-20 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingLeft: '3rem', paddingRight: '3rem' }}>
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight mb-4 sm:mb-0 text-left" style={{ color: '#395674' }}>
-            Why Choosing Us Means Choosing a Cleaner, Smarter Tomorrow
+            {t('home.whyChooseUs.title')}
           </h2>
           <p className="text-sm sm:text-base text-gray-600 max-w-md text-left">
-            Leading the windmill revolution with advanced turbine technology and sustainable energy solutions for generations to come.
+            {t('home.whyChooseUs.subtitle')}
           </p>
         </div>
 
@@ -27,7 +30,7 @@ export default function WhyChooseUs() {
               </div>
             </div>
             <p className="text-gray-700 mb-6 text-sm sm:text-base leading-relaxed text-center sm:text-left">
-              Our windmill specialists provide expert installation and maintenance services, ensuring optimal turbine performance in all wind conditions.
+              {t('home.whyChooseUs.leftCard')}
             </p>
             <div className="relative h-48 rounded-xl overflow-hidden">
               <Image 
@@ -59,10 +62,10 @@ export default function WhyChooseUs() {
               </div>
             </div>
             <p className="text-gray-700 mb-6 text-sm sm:text-base leading-relaxed text-center sm:text-left">
-              Our advanced windmill systems reduce energy costs by up to 70% and provide clean, renewable power for homes, farms, and businesses.
+              {t('home.whyChooseUs.rightCard')}
             </p>
             <button className="px-6 py-3 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 border border-gray-200 text-sm sm:text-base hover:shadow-md transition-shadow">
-              Get Started
+              {t('nav.getStarted')}
               <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#395674' }}>
                 <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{ color: 'white' }} />
               </div>
@@ -78,7 +81,7 @@ export default function WhyChooseUs() {
             </div>
             <div>
               <p className="text-gray-700 text-sm sm:text-base leading-relaxed text-center sm:text-left">
-                Our windmill expertise extends beyond installation. We provide comprehensive maintenance, blade inspection, and performance optimization services, ensuring your wind energy systems operate at peak efficiency 24/7, regardless of weather conditions.
+                {t('home.whyChooseUs.bottomCard')}
               </p>
             </div>
           </div>
@@ -91,7 +94,7 @@ export default function WhyChooseUs() {
               500+
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              Windmill installations nationwide
+              {t('home.whyChooseUs.stats.installations')}
             </p>
           </div>
           <div className="text-center">
@@ -99,7 +102,7 @@ export default function WhyChooseUs() {
               15MW
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              Clean energy capacity installed
+              {t('home.whyChooseUs.stats.capacity')}
             </p>
           </div>
           <div className="text-center">
@@ -107,7 +110,7 @@ export default function WhyChooseUs() {
               70%
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              Average energy cost reduction
+              {t('home.whyChooseUs.stats.reduction')}
             </p>
           </div>
           <div className="text-center">
@@ -115,7 +118,7 @@ export default function WhyChooseUs() {
               25+
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
-              Years of windmill expertise
+              {t('home.whyChooseUs.stats.expertise')}
             </p>
           </div>
         </div>

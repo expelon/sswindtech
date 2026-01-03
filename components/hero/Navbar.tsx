@@ -5,17 +5,19 @@ import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
-const navLinks = [
-  { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/about' },
-  { name: 'Services', href: '/services' },
-  { name: 'Contact', href: '/contact' },
-];
+import { useI18n, type Locale } from '@/lib/i18n';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const { locale, localeNames, setLocale, t } = useI18n();
+
+  const navLinks = [
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.about'), href: '/about' },
+    { name: t('nav.services'), href: '/services' },
+    { name: t('nav.contact'), href: '/contact' },
+  ];
 
   return (
     <nav className="absolute top-2 left-2 right-2 z-50 lg:top-8 lg:left-12 lg:right-12">
@@ -61,11 +63,26 @@ export default function Navbar() {
 
             <div className="hidden lg:block">
               <Link href="/contact" className="px-4 py-2.5 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-1.5 border border-gray-200 text-sm transition-all duration-300 hover:gap-2 group">
-                Get Started
+                {t('nav.getStarted')}
                 <div className="w-6 h-6 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:rotate-45" style={{backgroundColor: '#395674'}}>
                   <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: 'white'}} />
                 </div>
               </Link>
+            </div>
+
+            <div className="hidden lg:flex items-center">
+              <select
+                value={locale}
+                onChange={(e) => setLocale(e.target.value as Locale)}
+                className="bg-white/80 border border-gray-200 rounded-full px-3 py-2 text-sm font-medium text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                aria-label={t('nav.language')}
+              >
+                {(Object.keys(localeNames) as Locale[]).map((code) => (
+                  <option key={code} value={code}>
+                    {localeNames[code]}
+                  </option>
+                ))}
+              </select>
             </div>
 
           <button
@@ -96,6 +113,20 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-14 left-2 right-2 bg-white/90 backdrop-blur-lg border border-white/50 shadow-xl rounded-2xl mt-2">
           <div className="container mx-auto px-4 py-4 space-y-3">
+            <div className="pb-2">
+              <select
+                value={locale}
+                onChange={(e) => setLocale(e.target.value as Locale)}
+                className="w-full bg-white border border-gray-200 rounded-full px-3 py-2 text-sm font-medium text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                aria-label={t('nav.language')}
+              >
+                {(Object.keys(localeNames) as Locale[]).map((code) => (
+                  <option key={code} value={code}>
+                    {localeNames[code]}
+                  </option>
+                ))}
+              </select>
+            </div>
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -114,7 +145,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link href="/contact" className="w-full px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center justify-center gap-2 border border-gray-200">
-              Get Started
+              {t('nav.getStarted')}
               <div className="w-5 h-5 rounded-full flex items-center justify-center" style={{backgroundColor: '#395674'}}>
                 <ArrowRight className="w-3 h-3 rotate-[-45deg]" style={{color: 'white'}} />
               </div>

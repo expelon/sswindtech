@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
+import { useI18n } from '@/lib/i18n';
 
 interface FAQItem {
   question: string;
@@ -12,30 +13,32 @@ interface FAQItem {
 export default function FAQ() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  const { t } = useI18n();
+
   const faqs: FAQItem[] = [
     {
-      question: "How much does a windmill installation cost?",
-      answer: "The cost varies depending on the size and type of windmill system. Residential installations typically range from $15,000-$50,000, while commercial systems can cost $100,000+. We offer flexible financing options to make wind energy accessible."
+      question: t('home.faq.items.0.q'),
+      answer: t('home.faq.items.0.a')
     },
     {
-      question: "How long does installation take?",
-      answer: "Most residential installations take 2-4 weeks from site assessment to completion. Commercial projects may take 6-12 weeks depending on complexity. We work efficiently to minimize disruption to your daily operations."
+      question: t('home.faq.items.1.q'),
+      answer: t('home.faq.items.1.a')
     },
     {
-      question: "What maintenance is required?",
-      answer: "Windmills require minimal maintenance. We recommend annual inspections and basic servicing. Our maintenance plans include regular check-ups, blade inspections, and performance optimization to ensure maximum efficiency."
+      question: t('home.faq.items.2.q'),
+      answer: t('home.faq.items.2.a')
     },
     {
-      question: "How much can I save on energy costs?",
-      answer: "Most customers see 60-80% reduction in electricity bills. The exact savings depend on your location, wind conditions, and energy consumption. Many systems pay for themselves within 5-7 years."
+      question: t('home.faq.items.3.q'),
+      answer: t('home.faq.items.3.a')
     },
     {
-      question: "Do windmills work in all weather conditions?",
-      answer: "Modern windmills are designed to operate in various weather conditions. They automatically shut down in extreme winds to prevent damage and can generate power in light winds. Our systems are built to withstand harsh weather."
+      question: t('home.faq.items.4.q'),
+      answer: t('home.faq.items.4.a')
     },
     {
-      question: "What permits do I need?",
-      answer: "Requirements vary by location. We handle all permitting processes including zoning approvals, electrical permits, and environmental assessments. Our team ensures full compliance with local regulations."
+      question: t('home.faq.items.5.q'),
+      answer: t('home.faq.items.5.a')
     }
   ];
 
@@ -63,7 +66,7 @@ export default function FAQ() {
           <div className="order-1 lg:order-2">
             <div className="mb-8">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight" style={{ color: '#395674' }}>
-                Frequently Asked Questions
+                {t('home.faq.title')}
               </h2>
             </div>
 

@@ -3,9 +3,11 @@
 import Image from 'next/image';
 import { ArrowRight, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
+import { useI18n } from '@/lib/i18n';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useI18n();
   
   return (
     <footer className="bg-gray-900 text-white">
@@ -19,7 +21,7 @@ export default function Footer() {
                 SS Wind Tech
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Leading wind mill service provider with expert maintenance, installation, and repair solutions for optimal renewable energy system performance.
+                {t('footer.companyTagline')}
               </p>
             </div>
             
@@ -43,37 +45,32 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white">
-              Quick Links
+              {t('footer.quickLinks')}
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <Link href="/" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Home
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  About Us
+                  {t('nav.about')}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Contact
+                  {t('nav.contact')}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Our Services
+                  {t('footer.ourServices')}
                 </Link>
               </li>
               <li>
                 <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/cookie-policy" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Cookie Policy
+                  {t('footer.privacyPolicy')}
                 </Link>
               </li>
             </ul>
@@ -82,27 +79,27 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white">
-              Services
+              {t('footer.ourServices')}
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Site Preparation & Ground Works
+                  {t('footer.services.sitePrep')}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Mechanical & Electrical Installation
+                  {t('footer.services.mechElec')}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  Annual Servicing & Maintenance
+                  {t('footer.services.annual')}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm">
-                  WTG Operation & HT Line O&M
+                  {t('footer.services.wtg')}
                 </Link>
               </li>
             </ul>
@@ -111,7 +108,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-white">
-              Contact Us
+              {t('footer.contactUs')}
             </h4>
             <div className="space-y-3 sm:space-y-4">
               <div className="flex items-start">
@@ -165,14 +162,11 @@ export default function Footer() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6" style={{ paddingLeft: '1.5rem', paddingRight: '1.5rem' }}>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
             <div className="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
-              © {currentYear} SS Wind Tech. All rights reserved.
+              © {currentYear} SS Wind Tech. {t('footer.allRightsReserved')}
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 sm:gap-6 text-xs sm:text-sm">
               <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/cookie-policy" className="text-gray-400 hover:text-white transition-colors">
-                Cookie Policy
+                {t('footer.privacyPolicy')}
               </Link>
             </div>
           </div>

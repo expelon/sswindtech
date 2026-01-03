@@ -3,18 +3,21 @@
 import Image from 'next/image';
 import { ArrowRight, Wrench, Cpu, Shield, Zap, Truck, TreePine, HardHat } from 'lucide-react';
 import Link from 'next/link';
+import { useI18n } from '@/lib/i18n';
 
 export default function Services() {
+  const { t } = useI18n();
+
   return (
     <section id="services" className="relative bg-white py-16 sm:py-20 lg:py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8" style={{ paddingLeft: '3rem', paddingRight: '3rem' }}>
+      <div className="container mx-auto px-2 sm:px-6 lg:px-12">
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#395674' }}>
-            Comprehensive Wind Energy Services
+            {t('servicesSection.title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            From 250KW to 2.1MW turbines, we deliver end-to-end solutions with technical excellence and rapid execution across wind and solar energy sectors.
+            {t('servicesSection.subtitle')}
           </p>
         </div>
 
@@ -28,44 +31,44 @@ export default function Services() {
                 <Wrench className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl lg:text-3xl font-bold" style={{ color: '#395674' }}>Service Contracts</h3>
-                <p className="text-gray-600 mt-2">Flexible maintenance solutions tailored to your needs</p>
+                <h3 className="text-2xl lg:text-3xl font-bold" style={{ color: '#395674' }}>{t('servicesSection.contracts.title')}</h3>
+                <p className="text-gray-600 mt-2">{t('servicesSection.contracts.subtitle')}</p>
               </div>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h4 className="font-semibold text-lg mb-3" style={{ color: '#395674' }}>On Call Service</h4>
+                <h4 className="font-semibold text-lg mb-3" style={{ color: '#395674' }}>{t('servicesSection.contracts.cards.onCall.title')}</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Dedicated mobile teams of skilled technicians available 24x7 for troubleshooting, breakdowns, and wind turbine emergencies.
+                  {t('servicesSection.contracts.cards.onCall.desc')}
                 </p>
               </div>
               
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h4 className="font-semibold text-lg mb-3" style={{ color: '#395674' }}>Annual Maintenance</h4>
+                <h4 className="font-semibold text-lg mb-3" style={{ color: '#395674' }}>{t('servicesSection.contracts.cards.annual.title')}</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Qualified technicians for periodic preventive maintenance and breakdown attendance of WTGs.
+                  {t('servicesSection.contracts.cards.annual.desc')}
                 </p>
               </div>
               
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h4 className="font-semibold text-lg mb-3" style={{ color: '#395674' }}>COAMC</h4>
+                <h4 className="font-semibold text-lg mb-3" style={{ color: '#395674' }}>{t('servicesSection.contracts.cards.coamc.title')}</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Comprehensive O&M with 24x7 coverage, spares supply, major component repair/replacement, and guaranteed machine availability.
+                  {t('servicesSection.contracts.cards.coamc.desc')}
                 </p>
               </div>
               
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h4 className="font-semibold text-lg mb-3" style={{ color: '#395674' }}>SCADA System</h4>
+                <h4 className="font-semibold text-lg mb-3" style={{ color: '#395674' }}>{t('servicesSection.contracts.cards.scada.title')}</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Remote monitoring and real-time data analysis to verify turbine performance against OEM power curves.
+                  {t('servicesSection.contracts.cards.scada.desc')}
                 </p>
               </div>
             </div>
             
             <div className="mt-8 p-4 bg-blue-50 rounded-xl">
               <p className="text-sm text-gray-700">
-                <strong>Trusted by:</strong> Dalmia Cements, Ramco Cements, India Cements, TVS Srichakra, GGPL, SSM Group, Govindaraja Mills, Shanthi Gears
+                <strong>{t('servicesSection.contracts.trustedByLabel')}</strong> Dalmia Cements, Ramco Cements, India Cements, TVS Srichakra, GGPL, SSM Group, Govindaraja Mills, Shanthi Gears
               </p>
             </div>
           </div>
@@ -80,8 +83,8 @@ export default function Services() {
                     <Truck className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold" style={{ color: '#395674' }}>Erection & De-erection</h3>
-                    <p className="text-gray-600 mt-1">Expert handling of major wind turbine components</p>
+                    <h3 className="text-2xl lg:text-3xl font-bold" style={{ color: '#395674' }}>{t('servicesSection.erection.title')}</h3>
+                    <p className="text-gray-600 mt-1">{t('servicesSection.erection.subtitle')}</p>
                   </div>
                 </div>
                 
@@ -91,24 +94,24 @@ export default function Services() {
                       <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#395674' }}>
                         <Cpu className="w-4 h-4 text-white" />
                       </div>
-                      Component Services
+                      {t('servicesSection.erection.component.title')}
                     </h4>
                     <ul className="space-y-3 text-gray-600 text-sm">
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Gearboxes, Generators, Blades, Rotors</span>
+                        <span>{t('servicesSection.erection.component.bullets.0')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Nacelles and Tower Sections</span>
+                        <span>{t('servicesSection.erection.component.bullets.1')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Safe transportation to repair facilities</span>
+                        <span>{t('servicesSection.erection.component.bullets.2')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Reinstallation per safety standards</span>
+                        <span>{t('servicesSection.erection.component.bullets.3')}</span>
                       </li>
                     </ul>
                   </div>
@@ -118,24 +121,24 @@ export default function Services() {
                       <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#395674' }}>
                         <Shield className="w-4 h-4 text-white" />
                       </div>
-                      Training & Safety
+                      {t('servicesSection.erection.training.title')}
                     </h4>
                     <ul className="space-y-3 text-gray-600 text-sm">
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Continuous technical training programs</span>
+                        <span>{t('servicesSection.erection.training.bullets.0')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Stringent safety practices adherence</span>
+                        <span>{t('servicesSection.erection.training.bullets.1')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Safe working at heights expertise</span>
+                        <span>{t('servicesSection.erection.training.bullets.2')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Nacelle hub operations training</span>
+                        <span>{t('servicesSection.erection.training.bullets.3')}</span>
                       </li>
                     </ul>
                   </div>
@@ -174,60 +177,60 @@ export default function Services() {
                     <HardHat className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold" style={{ color: '#395674' }}>On Site Work</h3>
-                    <p className="text-gray-600 mt-1">Comprehensive on-tower repair and retrofit services</p>
+                    <h3 className="text-2xl lg:text-3xl font-bold" style={{ color: '#395674' }}>{t('servicesSection.onSite.title')}</h3>
+                    <p className="text-gray-600 mt-1">{t('servicesSection.onSite.subtitle')}</p>
                   </div>
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>Top Tower Work</h4>
+                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>{t('servicesSection.onSite.topTower.title')}</h4>
                     <ul className="space-y-2 text-gray-600 text-xs">
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>High speed pinion & bearing replacement</span>
+                        <span>{t('servicesSection.onSite.topTower.bullets.0')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Gear oil replacement (ground pumping)</span>
+                        <span>{t('servicesSection.onSite.topTower.bullets.1')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Generator bearing replacement</span>
+                        <span>{t('servicesSection.onSite.topTower.bullets.2')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Gearbox suspension replacement</span>
+                        <span>{t('servicesSection.onSite.topTower.bullets.3')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Yaw gear unit & brake servicing</span>
+                        <span>{t('servicesSection.onSite.topTower.bullets.4')}</span>
                       </li>
                     </ul>
                   </div>
                   
                   <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>Bottom Tower Work</h4>
+                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>{t('servicesSection.onSite.bottomTower.title')}</h4>
                     <ul className="space-y-2 text-gray-600 text-xs">
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Main bearing replacement</span>
+                        <span>{t('servicesSection.onSite.bottomTower.bullets.0')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Broken blade patch work</span>
+                        <span>{t('servicesSection.onSite.bottomTower.bullets.1')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Blade pinion replacement</span>
+                        <span>{t('servicesSection.onSite.bottomTower.bullets.2')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Blade cylinder replacement</span>
+                        <span>{t('servicesSection.onSite.bottomTower.bullets.3')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>UT test of main shaft</span>
+                        <span>{t('servicesSection.onSite.bottomTower.bullets.4')}</span>
                       </li>
                     </ul>
                   </div>
@@ -246,52 +249,52 @@ export default function Services() {
                     <Zap className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold" style={{ color: '#395674' }}>Solar Power Solutions</h3>
-                    <p className="text-gray-600 mt-1">Turnkey solar projects leveraging renewable energy expertise</p>
+                    <h3 className="text-2xl lg:text-3xl font-bold" style={{ color: '#395674' }}>{t('servicesSection.solar.title')}</h3>
+                    <p className="text-gray-600 mt-1">{t('servicesSection.solar.subtitle')}</p>
                   </div>
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>Project Capabilities</h4>
+                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>{t('servicesSection.solar.capabilities.title')}</h4>
                     <ul className="space-y-2 text-gray-600 text-xs">
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>MW-scale solar power plants</span>
+                        <span>{t('servicesSection.solar.capabilities.bullets.0')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Rooftop solar power systems</span>
+                        <span>{t('servicesSection.solar.capabilities.bullets.1')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Civil construction & structure mounting</span>
+                        <span>{t('servicesSection.solar.capabilities.bullets.2')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Cabling and electrical works</span>
+                        <span>{t('servicesSection.solar.capabilities.bullets.3')}</span>
                       </li>
                     </ul>
                   </div>
                   
                   <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>Regional Presence</h4>
+                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>{t('servicesSection.solar.presence.title')}</h4>
                     <ul className="space-y-2 text-gray-600 text-xs">
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Active projects across Tamil Nadu</span>
+                        <span>{t('servicesSection.solar.presence.bullets.0')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Successful installations in Andhra Pradesh</span>
+                        <span>{t('servicesSection.solar.presence.bullets.1')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Power evacuation systems expertise</span>
+                        <span>{t('servicesSection.solar.presence.bullets.2')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Transmission line & substation facilities</span>
+                        <span>{t('servicesSection.solar.presence.bullets.3')}</span>
                       </li>
                     </ul>
                   </div>
@@ -330,52 +333,52 @@ export default function Services() {
                     <Truck className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold" style={{ color: '#395674' }}>Crane Services</h3>
-                    <p className="text-gray-600 mt-1">Heavy-duty crane solutions with rapid mobilization</p>
+                    <h3 className="text-2xl lg:text-3xl font-bold" style={{ color: '#395674' }}>{t('servicesSection.crane.title')}</h3>
+                    <p className="text-gray-600 mt-1">{t('servicesSection.crane.subtitle')}</p>
                   </div>
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>Service Features</h4>
+                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>{t('servicesSection.crane.features.title')}</h4>
                     <ul className="space-y-2 text-gray-600 text-xs">
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Rapid mobilization to project sites</span>
+                        <span>{t('servicesSection.crane.features.bullets.0')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Cost-effective hiring solutions</span>
+                        <span>{t('servicesSection.crane.features.bullets.1')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Strict timeline adherence</span>
+                        <span>{t('servicesSection.crane.features.bullets.2')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Experienced operators and crew</span>
+                        <span>{t('servicesSection.crane.features.bullets.3')}</span>
                       </li>
                     </ul>
                   </div>
                   
                   <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>Windmill Expertise</h4>
+                    <h4 className="font-semibold text-base mb-3" style={{ color: '#395674' }}>{t('servicesSection.crane.expertise.title')}</h4>
                     <ul className="space-y-2 text-gray-600 text-xs">
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Turbines up to 2.1MW capacity</span>
+                        <span>{t('servicesSection.crane.expertise.bullets.0')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Precision blade works</span>
+                        <span>{t('servicesSection.crane.expertise.bullets.1')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Advanced gearbox replacement</span>
+                        <span>{t('servicesSection.crane.expertise.bullets.2')}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: '#395674' }}></div>
-                        <span>Two fully equipped crane sets</span>
+                        <span>{t('servicesSection.crane.expertise.bullets.3')}</span>
                       </li>
                     </ul>
                   </div>
@@ -391,24 +394,24 @@ export default function Services() {
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#395674' }}>
                   <Shield className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl lg:text-2xl font-bold" style={{ color: '#395674' }}>Safety Commitment</h3>
+                <h3 className="text-xl lg:text-2xl font-bold" style={{ color: '#395674' }}>{t('servicesSection.safety.title')}</h3>
               </div>
               <ul className="space-y-2 text-gray-600 text-sm">
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#395674' }}></div>
-                  <span>Rigorous classroom and hands-on training</span>
+                  <span>{t('servicesSection.safety.bullets.0')}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#395674' }}></div>
-                  <span>24x7 safety monitoring and review</span>
+                  <span>{t('servicesSection.safety.bullets.1')}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#395674' }}></div>
-                  <span>Dedicated safety team oversight</span>
+                  <span>{t('servicesSection.safety.bullets.2')}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#395674' }}></div>
-                  <span>Continuous improvement practices</span>
+                  <span>{t('servicesSection.safety.bullets.3')}</span>
                 </li>
               </ul>
             </div>
@@ -418,24 +421,24 @@ export default function Services() {
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#395674' }}>
                   <TreePine className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl lg:text-2xl font-bold" style={{ color: '#395674' }}>Green Practices</h3>
+                <h3 className="text-xl lg:text-2xl font-bold" style={{ color: '#395674' }}>{t('servicesSection.green.title')}</h3>
               </div>
               <ul className="space-y-2 text-gray-600 text-sm">
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#395674' }}></div>
-                  <span>Environmental responsibility focus</span>
+                  <span>{t('servicesSection.green.bullets.0')}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#395674' }}></div>
-                  <span>Proper hazardous waste disposal</span>
+                  <span>{t('servicesSection.green.bullets.1')}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#395674' }}></div>
-                  <span>Tree plantation drives</span>
+                  <span>{t('servicesSection.green.bullets.2')}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#395674' }}></div>
-                  <span>Solar energy & rainwater harvesting</span>
+                  <span>{t('servicesSection.green.bullets.3')}</span>
                 </li>
               </ul>
             </div>
@@ -445,7 +448,7 @@ export default function Services() {
         {/* CTA Section */}
         <div className="mt-16 text-center">
           <Link href="/contact" className="inline-flex px-8 py-4 bg-white text-gray-900 rounded-full font-semibold shadow-lg items-center gap-3 border-2 hover:shadow-xl transition-shadow text-lg" style={{ borderColor: '#395674' }}>
-            Get a Service Quote
+            {t('servicesSection.ctaButton')}
             <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#395674' }}>
               <ArrowRight className="w-5 h-5 rotate-[-45deg]" style={{ color: 'white' }} />
             </div>

@@ -5,8 +5,11 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import Navbar from './Navbar';
 import TrustSection from './TrustSection';
+import { useI18n } from '@/lib/i18n';
 
 export default function Hero() {
+  const { t } = useI18n();
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Background Image */}
@@ -27,27 +30,25 @@ export default function Hero() {
           <div className="text-center lg:text-left space-y-6 sm:space-y-8 order-2 lg:order-1 lg:transform lg:translate-y-24">
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-wide">
-                <span className="lg:hidden" style={{color: '#395674', textShadow: '2px 2px 4px rgba(255, 255, 255, 0.8)'}}>Wind-Powered Future</span>
-                <span className="hidden lg:block" style={{color: '#395674'}}>Wind-Powered Future</span>
+                <span className="lg:hidden" style={{color: '#395674', textShadow: '2px 2px 4px rgba(255, 255, 255, 0.8)'}}>{t('hero.title')}</span>
+                <span className="hidden lg:block" style={{color: '#395674'}}>{t('hero.title')}</span>
               </h1>
 
               <div className="lg:hidden">
                 <p className="text-sm sm:text-base md:text-base max-w-md mx-auto lg:mx-0 leading-relaxed font-normal" style={{color: '#395674', textShadow: '1px 1px 3px rgba(255, 255, 255, 0.8)'}}>
-                  Providing expert wind mill services and maintenance solutions to ensure optimal performance
-                  and longevity of your wind energy systems. Partner with us for reliable, professional service that keeps your turbines running efficiently.
+                  {t('hero.description')}
                 </p>
               </div>
               <div className="hidden lg:block">
                 <p className="text-sm sm:text-base md:text-base max-w-md mx-auto lg:mx-0 leading-relaxed font-normal" style={{color: '#395674'}}>
-                  Providing expert wind mill services and maintenance solutions to ensure optimal performance
-                  and longevity of your wind energy systems. Partner with us for reliable, professional service that keeps your turbines running efficiently.
+                  {t('hero.description')}
                 </p>
               </div>
             </div>
 
             <div className="flex gap-4 justify-center lg:justify-start">
               <Link href="/contact" className="hidden lg:inline-flex px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm items-center gap-2 border border-gray-200 text-base">
-                  Get Started
+                  {t('nav.getStarted')}
                   <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{backgroundColor: '#395674'}}>
                     <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: 'white'}} />
                   </div>
@@ -56,14 +57,14 @@ export default function Hero() {
               <div className="lg:hidden flex gap-3">
                 <button className="px-4 py-2 bg-white text-gray-900 rounded-full font-semibold shadow-sm items-center gap-2 border border-gray-200 text-base">
                   <a href="/contact" className="flex items-center gap-2">
-                    Get Started
+                    {t('nav.getStarted')}
                     <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{backgroundColor: '#395674'}}>
                       <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: 'white'}} />
                     </div>
                   </a>
                 </button>
                 <Link href="/about" className="px-4 py-2 bg-transparent text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 text-base" style={{border: '2px solid #395674', textShadow: '1px 1px 2px rgba(255, 255, 255, 0.8)'}}>
-                    Explore More
+                    {t('hero.exploreMore')}
                     <div className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent" style={{border: '2px solid #395674'}}>
                       <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: '#395674'}} />
                     </div>
@@ -71,7 +72,7 @@ export default function Hero() {
               </div>
               <div className="hidden lg:block">
                 <Link href="/about" className="px-4 py-2 bg-transparent text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 text-base" style={{border: '2px solid #395674'}}>
-                    Explore More
+                    {t('hero.exploreMore')}
                     <div className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent" style={{border: '2px solid #395674'}}>
                       <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: '#395674'}} />
                     </div>
@@ -87,10 +88,10 @@ export default function Hero() {
           </div>
           <div className="max-w-[16rem] w-full lg:w-auto text-center lg:text-left" style={{color: '#395674'}}>
             <h3 className="text-xs sm:text-sm md:text-base font-semibold leading-snug">
-              Trusted by businesses and communities who want clean, reliable energy.
+              {t('hero.trustedTitle')}
             </h3>
             <p className="mt-2 text-[11px] sm:text-xs leading-relaxed">
-              From small homes to large industries, our customers choose us for affordable and sustainable wind-powered solutions.
+              {t('hero.trustedBody')}
             </p>
           </div>
         </div>

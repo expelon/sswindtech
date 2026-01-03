@@ -4,8 +4,11 @@ import Navbar from '@/components/hero/Navbar';
 import Footer from '@/components/about/Footer';
 import { Shield, Users, Wrench, Clock, Award, TrendingUp, CheckCircle } from 'lucide-react';
 import Image from 'next/image';
+import { useI18n } from '@/lib/i18n';
 
 export default function AboutPage() {
+  const { t } = useI18n();
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -26,10 +29,10 @@ export default function AboutPage() {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6" style={{color: '#395674'}}>
-              About SS Wind Tech
+              {t('aboutPage.heroTitle')}
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-              Your trusted partner in professional wind mill services, maintenance, and optimization solutions.
+              {t('aboutPage.heroSubtitle')}
             </p>
           </div>
         </div>
@@ -41,21 +44,21 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{color: '#395674'}}>
-                Our Story
+                {t('aboutPage.storyTitle')}
               </h2>
             </div>
             
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 leading-relaxed mb-6">
-                <strong>SS Wind Tech</strong> has established itself as a leading windmill service provider with over <strong>12 years of industry experience</strong>, delivering reliable and technically advanced solutions across the renewable energy sector. The company offers a comprehensive range of services including erection and installation, repowering, make change, decommissioning, life extension studies of Wind Turbine Generators (WTGs), operation and maintenance, crane-assisted services, and repair works of windmill components supported by fully equipped workshops, electronics laboratories, and hydraulic facilities.
+                {t('aboutPage.story.p1')}
               </p>
               
               <p className="text-gray-600 leading-relaxed mb-6">
-                SS Wind Tech provides integrated end-to-end solutions and a diverse portfolio of services for both the wind farm and solar power industries. Currently, the company's operations span across the country, with a strong presence in <strong>Tamil Nadu</strong> and extended service coverage in states such as <strong>Karnataka, Andhra Pradesh, Maharashtra, Rajasthan, Gujarat, Madhya Pradesh</strong>, and other regions. The company serves a wide and impressive client base, built on trust, consistent performance, and quality service delivery.
+                {t('aboutPage.story.p2')}
               </p>
               
               <p className="text-gray-600 leading-relaxed mb-6">
-                The foundation of SS Wind Tech's success lies in its <strong>unwavering commitment to sustainable business practices, environmental best practices, and social responsibility</strong>. The company continually focuses on enhancing its technical capabilities, strengthening operational excellence, and achieving higher benchmarks in performance delivery while maintaining its competitive edge in the market. Leveraging its expertise in renewable energy, SS Wind Tech has also expanded its capabilities to undertake solar power projects, reinforcing its vision for a sustainable and energy-efficient future.
+                {t('aboutPage.story.p3')}
               </p>
             </div>
           </div>
@@ -68,7 +71,7 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{color: '#395674'}}>
-                Our Vision, Mission & Goals
+                {t('aboutPage.vmgTitle')}
               </h2>
             </div>
             
@@ -78,9 +81,9 @@ export default function AboutPage() {
                 <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6 mx-auto" style={{backgroundColor: '#395674'}}>
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center" style={{color: '#395674'}}>Our Vision</h3>
+                <h3 className="text-2xl font-bold mb-4 text-center" style={{color: '#395674'}}>{t('aboutPage.visionTitle')}</h3>
                 <p className="text-gray-600 text-center leading-relaxed flex-grow">
-                  To be a global renewable energy leader in customer satisfaction through service and sustainability.
+                  {t('aboutPage.visionBody')}
                 </p>
                 <div className="mt-6 relative h-56 rounded-lg overflow-hidden">
                   <Image 
@@ -97,9 +100,9 @@ export default function AboutPage() {
                 <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6 mx-auto" style={{backgroundColor: '#395674'}}>
                   <Shield className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center" style={{color: '#395674'}}>Our Mission</h3>
+                <h3 className="text-2xl font-bold mb-4 text-center" style={{color: '#395674'}}>{t('aboutPage.missionTitle')}</h3>
                 <p className="text-gray-600 text-center leading-relaxed flex-grow">
-                  Highest priority to Safety, Quality of Product, External & Internal Customer Satisfaction.
+                  {t('aboutPage.missionBody')}
                 </p>
                 <div className="mt-6 relative h-56 rounded-lg overflow-hidden">
                   <Image 
@@ -116,27 +119,27 @@ export default function AboutPage() {
                 <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-6 mx-auto" style={{backgroundColor: '#395674'}}>
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center" style={{color: '#395674'}}>Our Goals</h3>
+                <h3 className="text-2xl font-bold mb-4 text-center" style={{color: '#395674'}}>{t('aboutPage.goalsTitle')}</h3>
                 <ul className="text-gray-600 space-y-3 flex-grow">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Increase profit through quality as well as risk management</span>
+                    <span>{t('aboutPage.goals.items.0')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Maintain minimum manpower to control site activity</span>
+                    <span>{t('aboutPage.goals.items.1')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Ensure Zero-Deviation-Strategy in all processes</span>
+                    <span>{t('aboutPage.goals.items.2')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Ensure open-minded and honest communication based on facts internally and externally</span>
+                    <span>{t('aboutPage.goals.items.3')}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span>Ensure continuous improvements (CIMS)</span>
+                    <span>{t('aboutPage.goals.items.4')}</span>
                   </li>
                 </ul>
               </div>
@@ -151,29 +154,29 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{color: '#395674'}}>
-                Our Expertise
+                {t('aboutPage.expertiseTitle')}
               </h2>
               <p className="text-lg text-gray-600">
-                Comprehensive wind energy solutions backed by decades of experience
+                {t('aboutPage.expertiseSubtitle')}
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>20+</div>
-                <div className="text-gray-600">Years Experience</div>
+                <div className="text-gray-600">{t('aboutPage.expertiseStats.years')}</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>55kW</div>
-                <div className="text-gray-600">to 2.5MW Capacity</div>
+                <div className="text-gray-600">{t('aboutPage.expertiseStats.capacity')}</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>ISO</div>
-                <div className="text-gray-600">9001:2015 & 14001:2015</div>
+                <div className="text-gray-600">{t('aboutPage.expertiseStats.iso')}</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>100%</div>
-                <div className="text-gray-600">Customer Satisfaction</div>
+                <div className="text-gray-600">{t('aboutPage.expertiseStats.satisfaction')}</div>
               </div>
             </div>
           </div>
@@ -186,10 +189,10 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{color: '#395674'}}>
-                Meet our Directors
+                {t('aboutPage.directorsTitle')}
               </h2>
               <p className="text-lg text-gray-600">
-                Leadership team with decades of experience in wind energy solutions
+                {t('aboutPage.directorsSubtitle')}
               </p>
             </div>
             
@@ -206,20 +209,20 @@ export default function AboutPage() {
                     />
                   </div>
                   <div className="p-8 flex flex-col justify-center">
-                    <h3 className="text-2xl font-bold mb-2" style={{color: '#395674'}}>Mr. Sundar Murthy</h3>
-                    <p className="text-gray-600 mb-4 font-medium">Managing Director</p>
+                    <h3 className="text-2xl font-bold mb-2" style={{color: '#395674'}}>{t('aboutPage.directors.sundar.name')}</h3>
+                    <p className="text-gray-600 mb-4 font-medium">{t('aboutPage.directors.sundar.role')}</p>
                     <div className="prose prose-sm max-w-none text-gray-600 leading-relaxed">
                       <p className="mb-4">
-                        Mr. Sundar Murthy, Managing Director, is guiding force behind company's vision and direction. He provides strong leadership that keeps organization steady during both growth phases and challenging times. With clear strategic thinking, he ensures company remains stable in a dynamic and competitive environment.
+                        {t('aboutPage.directors.sundar.bio.p1')}
                       </p>
                       <p className="mb-4">
-                        His ability to make timely and well-informed decisions strengthens the company's foundation. He carefully balances risk and opportunity to protect long-term business interests. Through disciplined management, he maintains operational efficiency across all departments.
+                        {t('aboutPage.directors.sundar.bio.p2')}
                       </p>
                       <p className="mb-4">
-                        Mr. Sundar Murthy strongly believes that teamwork is the backbone of organizational success. He actively guides, mentors, and motivates employees at all levels. His leadership style encourages transparency, trust, and mutual respect.
+                        {t('aboutPage.directors.sundar.bio.p3')}
                       </p>
                       <p>
-                        He empowers teams to take responsibility and deliver their best performance. By aligning individual goals with company objectives, he builds a unified workforce. His vision and commitment continue to play a vital role in company's long-term success.
+                        {t('aboutPage.directors.sundar.bio.p4')}
                       </p>
                     </div>
                   </div>
@@ -230,17 +233,17 @@ export default function AboutPage() {
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="p-8 flex flex-col justify-center order-2 md:order-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{color: '#395674'}}>Mr. Sivakumar</h3>
-                    <p className="text-gray-600 mb-4 font-medium">Technical Director</p>
+                    <h3 className="text-2xl font-bold mb-2" style={{color: '#395674'}}>{t('aboutPage.directors.sivakumar.name')}</h3>
+                    <p className="text-gray-600 mb-4 font-medium">{t('aboutPage.directors.sivakumar.role')}</p>
                     <div className="prose prose-sm max-w-none text-gray-600 leading-relaxed">
                       <p className="mb-4">
-                        As a highly accomplished engineer, Mr. Sivakumar demonstrates an exceptional drive for solving complex mechanical challenges. With over <strong>30 years of extensive experience</strong> in wind turbine servicing, he brings deep technical expertise in WTG blades, WTG gearboxes, and winch systems—making him a significant asset to the organization.
+                        {t('aboutPage.directors.sivakumar.bio.p1')}
                       </p>
                       <p className="mb-4">
-                        His additional hands-on experience with hydraulic cranes further strengthens his technical leadership. Mr. Sivakumar has also successfully led and executed multiple wind turbine installations overseas, earning recognition for his international project excellence and engineering competence.
+                        {t('aboutPage.directors.sivakumar.bio.p2')}
                       </p>
                       <p>
-                        He is an active member of an energetic team of engineers and technicians, collectively possessing hardcore hands-on experience.
+                        {t('aboutPage.directors.sivakumar.bio.p3')}
                       </p>
                     </div>
                   </div>

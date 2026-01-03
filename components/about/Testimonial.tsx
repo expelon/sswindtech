@@ -3,27 +3,30 @@
 import Image from 'next/image';
 import { Star, ArrowLeft, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
+import { useI18n } from '@/lib/i18n';
 
 export default function Testimonial() {
+  const { t } = useI18n();
+
   const testimonials = [
     {
-      quote: "Switching my home to wind energy was one of the best decisions I've made. Now, my home runs efficiently on clean energy, and I feel proud knowing my electricity use supports a sustainable future.",
-      author: "Priya Sharma",
-      title: "Homeowner, Mumbai",
+      quote: t('home.testimonials.items.0.quote'),
+      author: t('home.testimonials.items.0.author'),
+      title: t('home.testimonials.items.0.title'),
       profileImage: "/p1.webp",
       backgroundImage: "/wind1.webp",
     },
     {
-      quote: "The team at SS WindTech is exceptional. They guided us through every step and the maintenance service is outstanding. Our wind turbine runs perfectly year-round.",
-      author: "Rajesh Kumar",
-      title: "Managing Director",
+      quote: t('home.testimonials.items.1.quote'),
+      author: t('home.testimonials.items.1.author'),
+      title: t('home.testimonials.items.1.title'),
       profileImage: "/p2.webp",
       backgroundImage: "/wind4.webp",
     },
     {
-      quote: "Installing a windmill from SS WindTech was the best decision for our manufacturing facility. Reliable power and significant cost savings. Excellent service!",
-      author: "Anjali Patel",
-      title: "Factory Manager",
+      quote: t('home.testimonials.items.2.quote'),
+      author: t('home.testimonials.items.2.author'),
+      title: t('home.testimonials.items.2.title'),
       profileImage: "/p3.webp",
       backgroundImage: "/wind.webp",
     },
@@ -50,7 +53,7 @@ export default function Testimonial() {
           {/* Left Side - Testimonial Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left order-2 lg:order-1">
             <span className="inline-block bg-white rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-gray-700 mb-4 sm:mb-6 shadow-sm">
-              Testimonials
+              {t('home.testimonials.badge')}
             </span>
             <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-medium leading-relaxed mb-4 sm:mb-6" style={{ color: '#395674' }}>
               {currentTestimonial.quote}

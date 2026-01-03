@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import WhatsAppButton from '@/components/about/WhatsAppButton';
 import { ChatbotWidget } from '@/components/chatbot-widget';
+import Providers from '@/components/providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -65,9 +66,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
-        <WhatsAppButton />
-        <ChatbotWidget />
+        <Providers>
+          {children}
+          <WhatsAppButton />
+          <ChatbotWidget />
+        </Providers>
       </body>
     </html>
   );

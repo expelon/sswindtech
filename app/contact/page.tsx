@@ -6,9 +6,11 @@ import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
+import { useI18n } from '@/lib/i18n';
 
 export default function ContactPage() {
   const searchParams = useSearchParams();
+  const { t } = useI18n();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -60,10 +62,10 @@ export default function ContactPage() {
         <div className="relative z-10 container mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{color: '#395674'}}>
-              Get in Touch
+              {t('contactPage.heroTitle')}
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed font-light">
-              Let's discuss how we can help with your wind mill service needs
+              {t('contactPage.heroSubtitle')}
             </p>
           </div>
         </div>
@@ -77,7 +79,6 @@ export default function ContactPage() {
               
               {/* Contact Form - Premium Styling */}
               <div className="space-y-8">
-                {/* Success Message */}
                 {showSuccess && (
                   <div className="bg-green-50 border border-green-200 rounded-lg p-4 flex items-center space-x-3">
                     <div className="flex-shrink-0">
@@ -86,15 +87,15 @@ export default function ContactPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-green-800 font-semibold">Message Sent Successfully!</h3>
-                      <p className="text-green-700 text-sm">Thank you for contacting us. We'll respond to your inquiry soon.</p>
+                      <h3 className="text-green-800 font-semibold">{t('contactPage.successTitle')}</h3>
+                      <p className="text-green-700 text-sm">{t('contactPage.successSubtitle')}</p>
                     </div>
                   </div>
                 )}
                 
                 <div>
                   <h2 className="text-3xl lg:text-4xl font-bold mb-4 tracking-tight" style={{color: '#395674'}}>
-                    Send us a Message
+                    {t('contactPage.formTitle')}
                   </h2>
                 </div>
                 
@@ -103,7 +104,6 @@ export default function ContactPage() {
                   method="POST"
                   className="space-y-6"
                 >
-                  {/* Formsubmit.co hidden fields */}
                   <input type="hidden" name="_subject" value="New Contact Form Submission from SS Wind Tech Website" />
                   <input type="hidden" name="_template" value="table" />
                   <input type="hidden" name="_captcha" value="false" />
@@ -111,7 +111,7 @@ export default function ContactPage() {
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-700">
-                        Name
+                        {t('contactPage.form.name')}
                       </label>
                       <input
                         type="text"
@@ -121,13 +121,13 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                        placeholder="Your name"
+                        placeholder={t('contactPage.form.namePlaceholder')}
                       />
                     </div>
                     
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-700">
-                        Email
+                        {t('contactPage.form.email')}
                       </label>
                       <input
                         type="email"
@@ -137,7 +137,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                        placeholder="your@email.com"
+                        placeholder={t('contactPage.form.emailPlaceholder')}
                       />
                     </div>
                   </div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium mb-2 text-gray-700">
-                        Phone
+                        {t('contactPage.form.phone')}
                       </label>
                       <input
                         type="tel"
@@ -154,13 +154,13 @@ export default function ContactPage() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                        placeholder="(555) 123-4567"
+                        placeholder={t('contactPage.form.phonePlaceholder')}
                       />
                     </div>
                     
                     <div>
                       <label htmlFor="service" className="block text-sm font-medium mb-2 text-gray-700">
-                        Service
+                        {t('contactPage.form.service')}
                       </label>
                       <select
                         id="service"
@@ -169,19 +169,19 @@ export default function ContactPage() {
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                       >
-                        <option value="">Select service</option>
-                        <option value="maintenance">Maintenance</option>
-                        <option value="installation">Installation</option>
-                        <option value="consulting">Consulting</option>
-                        <option value="repair">Repair</option>
-                        <option value="other">Other</option>
+                        <option value="">{t('contactPage.form.serviceSelect')}</option>
+                        <option value="maintenance">{t('contactPage.form.serviceOptions.maintenance')}</option>
+                        <option value="installation">{t('contactPage.form.serviceOptions.installation')}</option>
+                        <option value="consulting">{t('contactPage.form.serviceOptions.consulting')}</option>
+                        <option value="repair">{t('contactPage.form.serviceOptions.repair')}</option>
+                        <option value="other">{t('contactPage.form.serviceOptions.other')}</option>
                       </select>
                     </div>
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-700">
-                      Message
+                      {t('contactPage.form.message')}
                     </label>
                     <textarea
                       id="message"
@@ -191,7 +191,7 @@ export default function ContactPage() {
                       required
                       rows={5}
                       className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
-                      placeholder="Tell us about your project..."
+                      placeholder={t('contactPage.form.messagePlaceholder')}
                     />
                   </div>
 
@@ -204,7 +204,7 @@ export default function ContactPage() {
                   >
                     <span className="flex items-center justify-center gap-2">
                       <Send className="w-5 h-5" />
-                      Send Message
+                      {t('contactPage.form.submit')}
                     </span>
                   </button>
                 </form>
@@ -214,9 +214,9 @@ export default function ContactPage() {
               <div className="space-y-12">
                 <div>
                   <h2 className="text-3xl lg:text-4xl font-bold mb-4 tracking-tight" style={{color: '#395674'}}>
-                    Contact Information
+                    {t('contactPage.infoTitle')}
                   </h2>
-                  <p className="text-gray-600 text-lg">Reach out to us directly</p>
+                  <p className="text-gray-600 text-lg">{t('contactPage.infoSubtitle')}</p>
                 </div>
                 
                 <div className="space-y-8">
@@ -227,7 +227,7 @@ export default function ContactPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2 text-gray-900">WhatsApp</h3>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">{t('contactPage.infoCards.whatsapp.title')}</h3>
                       <a href="https://wa.me/918098495874" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
                         +91 80984 95874
                       </a>
@@ -239,7 +239,7 @@ export default function ContactPage() {
                       <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Phone</h3>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">{t('contactPage.infoCards.phone.title')}</h3>
                       <p className="text-gray-600">+91 97507 24822</p>
                       <p className="text-gray-600">+91 80984 95864</p>
                     </div>
@@ -250,7 +250,7 @@ export default function ContactPage() {
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Email</h3>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">{t('contactPage.infoCards.email.title')}</h3>
                       <p className="text-gray-600">sswindtechindia@gmail.com</p>
                     </div>
                   </div>
@@ -260,12 +260,12 @@ export default function ContactPage() {
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Office</h3>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">{t('contactPage.infoCards.office.title')}</h3>
                       <p className="text-gray-600">
-                        3/437 B Nallipoombugar Nagar<br />
-                        Near RKR School, Tiruppur Rd<br />
-                        Udumalpet - 642 126<br />
-                        Tiruppur Dt, Tamilnadu
+                        {t('contactPage.infoCards.office.addressLines.0')}<br />
+                        {t('contactPage.infoCards.office.addressLines.1')}<br />
+                        {t('contactPage.infoCards.office.addressLines.2')}<br />
+                        {t('contactPage.infoCards.office.addressLines.3')}
                       </p>
                     </div>
                   </div>
