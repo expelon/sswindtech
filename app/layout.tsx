@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import WhatsAppButton from '@/components/about/WhatsAppButton';
+import { ChatbotWidget } from '@/components/chatbot-widget';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -66,6 +67,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <WhatsAppButton />
+        <ChatbotWidget />
       </body>
     </html>
   );

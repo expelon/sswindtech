@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 export default function AboutSection() {
@@ -25,24 +26,24 @@ export default function AboutSection() {
             </div>
 
             <h2 className="mt-4 text-2xl sm:text-4xl lg:text-5xl font-semibold leading-snug lg:leading-tight tracking-normal lg:tracking-wide" style={{ color: '#395674' }}>
-              Innovating clean wind
+              12+ Years of Windmill
               <br />
-              power for a sustainable
+              Service Excellence
               <br />
-              future
+              & Innovation
             </h2>
 
             <p className="mt-4 text-sm sm:text-base leading-relaxed text-gray-600 max-w-md sm:max-w-lg">
-              We are a modern renewable-energy company dedicated to transforming natural wind into clean, affordable, and reliable power. Our team works with advanced turbine technology to help homes, businesses, and communities switch to sustainable energy with confidence.
+              SS Wind Tech has established itself as a leading windmill service provider with over 12 years of industry experience, delivering reliable and technically advanced solutions across the renewable energy sector. The company offers a comprehensive range of services including erection and installation, repowering, make change, decommissioning, life extension studies of Wind Turbine Generators (WTGs), operation and maintenance, crane-assisted services, and repair works of windmill components supported by fully equipped workshops, electronics laboratories, and hydraulic facilities, along with other windmill-related activities.
             </p>
 
             <div className="mt-6 mb-6 flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
-              <button className="px-4 py-2 bg-transparent text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 text-sm sm:text-base whitespace-nowrap mx-auto sm:mx-0" style={{ border: '2px solid #395674' }}>
+              <Link href="/about" className="px-4 py-2 bg-transparent text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 text-sm sm:text-base whitespace-nowrap mx-auto sm:mx-0" style={{ border: '2px solid #395674' }}>
                 <span className="whitespace-nowrap">Explore More</span>
                 <div className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent" style={{ border: '2px solid #395674' }}>
                   <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{ color: '#395674' }} />
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

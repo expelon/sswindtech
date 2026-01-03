@@ -47,15 +47,15 @@ export default function AboutPage() {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 leading-relaxed mb-6">
-                <strong>SS Wind Tech</strong> was established in 2012 as an ISO 9001:2015 (QMS) and ISO 14001:2015 (EMS) certified organization. Our team brings <strong>20 years of experience</strong> in wind turbine installation and maintenance activities across different makes and capacities, from 55kw to 2.5MW WTGs.
+                <strong>SS Wind Tech</strong> has established itself as a leading windmill service provider with over <strong>12 years of industry experience</strong>, delivering reliable and technically advanced solutions across the renewable energy sector. The company offers a comprehensive range of services including erection and installation, repowering, make change, decommissioning, life extension studies of Wind Turbine Generators (WTGs), operation and maintenance, crane-assisted services, and repair works of windmill components supported by fully equipped workshops, electronics laboratories, and hydraulic facilities.
               </p>
               
               <p className="text-gray-600 leading-relaxed mb-6">
-                We focus and concentrate on complete customized solutions for wind power projects, right from preliminary wind studies, site selection, and liaison with government agencies to installation and successful operation and service support.
+                SS Wind Tech provides integrated end-to-end solutions and a diverse portfolio of services for both the wind farm and solar power industries. Currently, the company's operations span across the country, with a strong presence in <strong>Tamil Nadu</strong> and extended service coverage in states such as <strong>Karnataka, Andhra Pradesh, Maharashtra, Rajasthan, Gujarat, Madhya Pradesh</strong>, and other regions. The company serves a wide and impressive client base, built on trust, consistent performance, and quality service delivery.
               </p>
               
               <p className="text-gray-600 leading-relaxed mb-6">
-                The company stepped forward with a team of strong technically proficient Engineers for Installation and O&M personnel from different types of Wind Turbine manufacturers, from 0.25Mw to 2Mw WTGs, with strong technology for Rotor, Gearbox, and generator erection and de-erection with Winch systems.
+                The foundation of SS Wind Tech's success lies in its <strong>unwavering commitment to sustainable business practices, environmental best practices, and social responsibility</strong>. The company continually focuses on enhancing its technical capabilities, strengthening operational excellence, and achieving higher benchmarks in performance delivery while maintaining its competitive edge in the market. Leveraging its expertise in renewable energy, SS Wind Tech has also expanded its capabilities to undertake solar power projects, reinforcing its vision for a sustainable and energy-efficient future.
               </p>
             </div>
           </div>

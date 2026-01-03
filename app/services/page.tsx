@@ -2,6 +2,7 @@
 
 import Navbar from '@/components/hero/Navbar';
 import Footer from '@/components/about/Footer';
+import Services from '@/components/about/Services';
 import { Wrench, Users, Shield, Clock, Award, TrendingUp, CheckCircle, MapPin, Zap, Settings, Activity } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -238,6 +239,9 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      {/* Comprehensive Services Section */}
+      <Services />
 
       <Footer />
     </div>
