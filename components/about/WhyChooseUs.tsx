@@ -3,9 +3,11 @@
 import Image from 'next/image';
 import { ArrowRight, Wind, Zap, Shield, Leaf } from 'lucide-react';
 import { useI18n } from '@/lib/i18n';
+import { useRouter } from 'next/navigation';
 
 export default function WhyChooseUs() {
   const { t } = useI18n();
+  const router = useRouter();
 
   return (
     <section className="relative bg-gray-50 py-16 sm:py-20 lg:py-24">
@@ -64,7 +66,10 @@ export default function WhyChooseUs() {
             <p className="text-gray-700 mb-6 text-sm sm:text-base leading-relaxed text-center sm:text-left">
               {t('home.whyChooseUs.rightCard')}
             </p>
-            <button className="px-6 py-3 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 border border-gray-200 text-sm sm:text-base hover:shadow-md transition-shadow">
+            <button 
+              onClick={() => router.push('/services')}
+              className="px-6 py-3 bg-white text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 border border-gray-200 text-sm sm:text-base hover:shadow-md transition-shadow"
+            >
               {t('nav.getStarted')}
               <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#395674' }}>
                 <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{ color: 'white' }} />

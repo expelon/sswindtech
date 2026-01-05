@@ -29,11 +29,11 @@ const messages: Record<Locale, Messages> = {
     },
     aboutSection: {
       badge: 'About Us',
-      titleLine1: '12+ Years of Windmill',
+      titleLine1: '32+ Years of Windmill Experience',
       titleLine2: 'Service Excellence',
       titleLine3: '& Innovation',
       description:
-        'SS Wind Tech has established itself as a leading windmill service provider with over 12 years of industry experience, delivering reliable and technically advanced solutions across the renewable energy sector. The company offers a comprehensive range of services including erection and installation, repowering, make change, decommissioning, life extension studies of Wind Turbine Generators (WTGs), operation and maintenance, crane-assisted services, and repair works of windmill components supported by fully equipped workshops, electronics laboratories, and hydraulic facilities, along with other windmill-related activities.',
+        'SS Wind Tech has established itself as a leading windmill service provider with over 32+ years of industry experience, delivering reliable and technically advanced solutions across the renewable energy sector. The company offers a comprehensive range of services including erection and installation, repowering, make change, decommissioning, life extension studies of Wind Turbine Generators (WTGs), operation and maintenance, crane-assisted services, and repair works of windmill components supported by fully equipped workshops, electronics laboratories, and hydraulic facilities, along with other windmill-related activities.',
       exploreMore: 'Explore More',
     },
     footer: {
@@ -58,7 +58,7 @@ const messages: Record<Locale, Messages> = {
       storyTitle: 'Our Story',
       story: {
         p1:
-          'SS Wind Tech has established itself as a leading windmill service provider with over 12 years of industry experience, delivering reliable and technically advanced solutions across the renewable energy sector. The company offers a comprehensive range of services including erection and installation, repowering, make change, decommissioning, life extension studies of Wind Turbine Generators (WTGs), operation and maintenance, crane-assisted services, and repair works of windmill components supported by fully equipped workshops, electronics laboratories, and hydraulic facilities.',
+          'SS Wind Tech has established itself as a leading windmill service provider with over 32+ years of industry experience, delivering reliable and technically advanced solutions across the renewable energy sector. The company offers a comprehensive range of services including erection and installation, repowering, make change, decommissioning, life extension studies of Wind Turbine Generators (WTGs), operation and maintenance, crane-assisted services, and repair works of windmill components supported by fully equipped workshops, electronics laboratories, and hydraulic facilities.',
         p2:
           "SS Wind Tech provides integrated end-to-end solutions and a diverse portfolio of services for both the wind farm and solar power industries. Currently, the company's operations span across the country, with a strong presence in Tamil Nadu and extended service coverage in states such as Karnataka, Andhra Pradesh, Maharashtra, Rajasthan, Gujarat, Madhya Pradesh, and other regions. The company serves a wide and impressive client base, built on trust, consistent performance, and quality service delivery.",
         p3:
@@ -507,11 +507,11 @@ const messages: Record<Locale, Messages> = {
     },
     aboutSection: {
       badge: 'எங்களை பற்றி',
-      titleLine1: '12+ ஆண்டுகள் காற்றாலை',
+      titleLine1: '32+ ஆண்டுகள் காற்றாலை',
       titleLine2: 'சேவை சிறப்பு',
       titleLine3: 'மற்றும் புதுமை',
       description:
-        'SS Wind Tech நிறுவனம் 12+ ஆண்டுகளுக்கு மேற்பட்ட அனுபவத்துடன் நம்பகமான மற்றும் தொழில்நுட்ப முன்னேற்றமான காற்றாலை சேவைகளை வழங்குகிறது. நிறுவுதல், erecting, repowering, decommissioning, WTG life extension, O&M, crane-assisted சேவைகள் மற்றும் கூறுகள் பழுது பார்ப்பு உள்ளிட்ட பல்வேறு சேவைகளை வழங்குகிறோம்.',
+        'SS Wind Tech நிறுவனம் 32+ ஆண்டுகளுக்கு மேற்பட்ட அனுபவத்துடன் நம்பகமான மற்றும் தொழில்நுட்ப முன்னேற்றமான காற்றாலை சேவைகளை வழங்குகிறது. நிறுவுதல், erecting, repowering, decommissioning, WTG life extension, O&M, crane-assisted சேவைகள் மற்றும் கூறுகள் பழுது பார்ப்பு உள்ளிட்ட பல்வேறு சேவைகளை வழங்குகிறோம்.',
       exploreMore: 'மேலும் அறிய',
     },
     footer: {
@@ -536,7 +536,7 @@ const messages: Record<Locale, Messages> = {
       storyTitle: 'எங்கள் கதை',
       story: {
         p1:
-          'SS Wind Tech நிறுவனம் 12+ ஆண்டுகளுக்கு மேற்பட்ட அனுபவத்துடன் முன்னணி காற்றாலை சேவை வழங்குநராக உருவெடுத்துள்ளது. புதுப்பிக்கத்தக்க ஆற்றல் துறையில் நம்பகமான மற்றும் தொழில்நுட்ப முன்னேற்றமான தீர்வுகளை வழங்குகிறது. நிறுவுதல்/நிறுவல், repowering, make change, decommissioning, WTG life extension ஆய்வுகள், O&M, கிரேன் உதவி சேவைகள் மற்றும் கூறுகள் பழுது பார்ப்பு உள்ளிட்ட முழுமையான சேவைகளை, முழுமையாக உபகரணங்கள் கொண்ட பணிமனைகள், எலக்ட்ரானிக்ஸ் ஆய்வகம் மற்றும் ஹைட்ராலிக் வசதிகளுடன் ஆதரிக்கிறது.',
+          'SS Wind Tech நிறுவனம் 32+ ஆண்டுகளுக்கு மேற்பட்ட அனுபவத்துடன் முன்னணி காற்றாலை சேவை வழங்குநராக உருவெடுத்துள்ளது. புதுப்பிக்கத்தக்க ஆற்றல் துறையில் நம்பகமான மற்றும் தொழில்நுட்ப முன்னேற்றமான தீர்வுகளை வழங்குகிறது. நிறுவுதல்/நிறுவல், repowering, make change, decommissioning, WTG life extension ஆய்வுகள், O&M, கிரேன் உதவி சேவைகள் மற்றும் கூறுகள் பழுது பார்ப்பு உள்ளிட்ட முழுமையான சேவைகளை, முழுமையாக உபகரணங்கள் கொண்ட பணிமனைகள், எலக்ட்ரானிக்ஸ் ஆய்வகம் மற்றும் ஹைட்ராலிக் வசதிகளுடன் ஆதரிக்கிறது.',
         p2:
           'காற்றாலை மற்றும் சூரிய ஆற்றல் துறைகளுக்காக SS Wind Tech ஒருங்கிணைந்த தொடக்கம் முதல் முடிவு வரை தீர்வுகளை வழங்குகிறது. தற்போது இந்தியா முழுவதும் செயல்பாடுகள் பரந்து, தமிழ்நாட்டில் வலுவான இருப்புடன், கர்நாடகா, ஆந்திரப் பிரதேசம், மகாராஷ்டிரா, ராஜஸ்தான், குஜராத், மத்தியப் பிரதேசம் உள்ளிட்ட பகுதிகளிலும் சேவை வழங்குகிறது. நம்பிக்கை, தொடர்ச்சியான செயல்திறன் மற்றும் தரமான சேவை வழங்குதலின் அடிப்படையில் பெரிய வாடிக்கையாளர் வட்டத்தை நிறுவியுள்ளது.',
         p3:
@@ -984,11 +984,11 @@ const messages: Record<Locale, Messages> = {
     },
     aboutSection: {
       badge: 'ನಮ್ಮ ಬಗ್ಗೆ',
-      titleLine1: '12+ ವರ್ಷಗಳ ವಿಂಡ್ ಮಿಲ್',
+      titleLine1: '32+ ವರ್ಷಗಳ ವಿಂಡ್ ಮಿಲ್',
       titleLine2: 'ಸೇವಾ ಶ್ರೇಷ್ಠತೆ',
       titleLine3: 'ಮತ್ತು ನವೀನತೆ',
       description:
-        'SS Wind Tech 12+ ವರ್ಷಗಳ ಅನುಭವದೊಂದಿಗೆ ನಂಬಿಕಾರ್ಹ ಮತ್ತು ತಾಂತ್ರಿಕವಾಗಿ ಮುಂದುವರಿದ ಪರಿಹಾರಗಳನ್ನು ಒದಗಿಸುವ ಪ್ರಮುಖ ವಿಂಡ್ ಮಿಲ್ ಸೇವಾ ಸಂಸ್ಥೆಯಾಗಿದೆ. ಸ್ಥಾಪನೆ, repowering, decommissioning, WTG life extension, O&M, crane-assisted ಸೇವೆಗಳು ಹಾಗೂ ಘಟಕಗಳ ದುರಸ್ತಿ ಸೇವೆಗಳನ್ನು ಒದಗಿಸುತ್ತೇವೆ.',
+        'SS Wind Tech 32+ ವರ್ಷಗಳ ಅನುಭವದೊಂದಿಗೆ ನಂಬಿಕಾರ್ಹ ಮತ್ತು ತಾಂತ್ರಿಕವಾಗಿ ಮುಂದುವರಿದ ಪರಿಹಾರಗಳನ್ನು ಒದಗಿಸುವ ಪ್ರಮುಖ ವಿಂಡ್ ಮಿಲ್ ಸೇವಾ ಸಂಸ್ಥೆಯಾಗಿದೆ. ಸ್ಥಾಪನೆ, repowering, decommissioning, WTG life extension, O&M, crane-assisted ಸೇವೆಗಳು ಹಾಗೂ ಘಟಕಗಳ ದುರಸ್ತಿ ಸೇವೆಗಳನ್ನು ಒದಗಿಸುತ್ತೇವೆ.',
       exploreMore: 'ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ',
     },
     footer: {
@@ -1013,7 +1013,7 @@ const messages: Record<Locale, Messages> = {
       storyTitle: 'ನಮ್ಮ ಕಥೆ',
       story: {
         p1:
-          'SS Wind Tech 12+ ವರ್ಷಗಳ ಉದ್ಯಮ ಅನುಭವದೊಂದಿಗೆ ಪ್ರಮುಖ ವಿಂಡ್ ಮಿಲ್ ಸೇವಾ ಸಂಸ್ಥೆಯಾಗಿ ಗುರುತಿಸಿಕೊಂಡಿದೆ. ನವೀಕರಿಸಬಹುದಾದ ಶಕ್ತಿ ಕ್ಷೇತ್ರದಲ್ಲಿ ವಿಶ್ವಾಸಾರ್ಹ ಮತ್ತು ತಾಂತ್ರಿಕವಾಗಿ ಮುಂದುವರಿದ ಪರಿಹಾರಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ. ಸ್ಥಾಪನೆ/ಇನ್‌ಸ್ಟಾಲೇಶನ್, repowering, make change, decommissioning, WTG life extension ಅಧ್ಯಯನಗಳು, O&M, ಕ್ರೇನ್ ಸಹಾಯ ಸೇವೆಗಳು ಮತ್ತು ಘಟಕಗಳ ದುರಸ್ತಿ ಕಾರ್ಯಗಳನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಸಜ್ಜುಗೊಂಡ ವರ್ಕ್‌ಶಾಪ್‌ಗಳು, ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಲ್ಯಾಬ್ ಮತ್ತು ಹೈಡ್ರಾಲಿಕ್ ಸೌಲಭ್ಯಗಳೊಂದಿಗೆ ಬೆಂಬಲಿಸುತ್ತದೆ.',
+          'SS Wind Tech 32+ ವರ್ಷಗಳ ಉದ್ಯಮ ಅನುಭವದೊಂದಿಗೆ ಪ್ರಮುಖ ವಿಂಡ್ ಮಿಲ್ ಸೇವಾ ಸಂಸ್ಥೆಯಾಗಿ ಗುರುತಿಸಿಕೊಂಡಿದೆ. ನವೀಕರಿಸಬಹುದಾದ ಶಕ್ತಿ ಕ್ಷೇತ್ರದಲ್ಲಿ ವಿಶ್ವಾಸಾರ್ಹ ಮತ್ತು ತಾಂತ್ರಿಕವಾಗಿ ಮುಂದುವರಿದ ಪರಿಹಾರಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ. ಸ್ಥಾಪನೆ/ಇನ್‌ಸ್ಟಾಲೇಶನ್, repowering, make change, decommissioning, WTG life extension ಅಧ್ಯಯನಗಳು, O&M, ಕ್ರೇನ್ ಸಹಾಯ ಸೇವೆಗಳು ಮತ್ತು ಘಟಕಗಳ ದುರಸ್ತಿ ಕಾರ್ಯಗಳನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಸಜ್ಜುಗೊಂಡ ವರ್ಕ್‌ಶಾಪ್‌ಗಳು, ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಲ್ಯಾಬ್ ಮತ್ತು ಹೈಡ್ರಾಲಿಕ್ ಸೌಲಭ್ಯಗಳೊಂದಿಗೆ ಬೆಂಬಲಿಸುತ್ತದೆ.',
         p2:
           'ವಿಂಡ್ ಫಾರ್ಮ್ ಮತ್ತು ಸೌರ ವಿದ್ಯುತ್ ಕ್ಷೇತ್ರಗಳಿಗೆ SS Wind Tech ಏಕೀಕೃತ end-to-end ಪರಿಹಾರಗಳನ್ನು ಹಾಗೂ ವೈವಿಧ್ಯಮಯ ಸೇವಾ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಒದಗಿಸುತ್ತದೆ. ಇಂದು ಕಂಪನಿಯ ಕಾರ್ಯಾಚರಣೆಗಳು ದೇಶಾದ್ಯಂತ ವಿಸ್ತರಿಸಿ, ತಮಿಳುನಾಡಿನಲ್ಲಿ ಬಲವಾದ ಹಾಜರಾತಿಯೊಂದಿಗೆ ಕರ್ನಾಟಕ, ಆಂಧ್ರಪ್ರದೇಶ, ಮಹಾರಾಷ್ಟ್ರ, ರಾಜಸ್ಥಾನ, ಗುಜರಾತ್, ಮಧ್ಯಪ್ರದೇಶ ಮುಂತಾದ ರಾಜ್ಯಗಳಲ್ಲೂ ಸೇವಾ ವ್ಯಾಪ್ತಿಯಿದೆ. ನಂಬಿಕೆ, ಸತತ ಕಾರ್ಯಕ್ಷಮತೆ ಮತ್ತು ಗುಣಮಟ್ಟದ ಸೇವೆ ಆಧಾರವಾಗಿ ದೊಡ್ಡ ಗ್ರಾಹಕ ವಲಯವನ್ನು ನಿರ್ಮಿಸಿದೆ.',
         p3:
@@ -1461,11 +1461,11 @@ const messages: Record<Locale, Messages> = {
     },
     aboutSection: {
       badge: 'About Us',
-      titleLine1: '12+ Years of Windmill',
+      titleLine1: '32+ Years of Windmill Experience',
       titleLine2: 'Service Excellence',
       titleLine3: '& Innovation',
       description:
-        'SS Wind Tech has established itself as a leading windmill service provider with over 12 years of industry experience, delivering reliable and technically advanced solutions across the renewable energy sector.',
+        'SS Wind Tech has established itself as a leading windmill service provider with over 32+ years of industry experience, delivering reliable and technically advanced solutions across the renewable energy sector.',
       exploreMore: 'Explore More',
     },
     aboutPage: {
@@ -1474,7 +1474,7 @@ const messages: Record<Locale, Messages> = {
       storyTitle: 'Our Story',
       story: {
         p1:
-          'SS Wind Tech has established itself as a leading windmill service provider with over 12 years of industry experience, delivering reliable and technically advanced solutions across the renewable energy sector. The company offers a comprehensive range of services including erection and installation, repowering, make change, decommissioning, life extension studies of Wind Turbine Generators (WTGs), operation and maintenance, crane-assisted services, and repair works of windmill components supported by fully equipped workshops, electronics laboratories, and hydraulic facilities.',
+          'SS Wind Tech has established itself as a leading windmill service provider with over 32+ years of industry experience, delivering reliable and technically advanced solutions across the renewable energy sector. The company offers a comprehensive range of services including erection and installation, repowering, make change, decommissioning, life extension studies of Wind Turbine Generators (WTGs), operation and maintenance, crane-assisted services, and repair works of windmill components supported by fully equipped workshops, electronics laboratories, and hydraulic facilities.',
         p2:
           "SS Wind Tech provides integrated end-to-end solutions and a diverse portfolio of services for both the wind farm and solar power industries. Currently, the company's operations span across the country, with a strong presence in Tamil Nadu and extended service coverage in states such as Karnataka, Andhra Pradesh, Maharashtra, Rajasthan, Gujarat, Madhya Pradesh, and other regions. The company serves a wide and impressive client base, built on trust, consistent performance, and quality service delivery.",
         p3:
@@ -1924,11 +1924,11 @@ const messages: Record<Locale, Messages> = {
     },
     aboutSection: {
       badge: 'మా గురించి',
-      titleLine1: '12+ సంవత్సరాల విండ్ మిల్',
+      titleLine1: '32+ సంవత్సరాల విండ్ మిల్',
       titleLine2: 'సేవా విశిష్టత',
       titleLine3: 'మరియు నవీకరణ',
       description:
-        'SS Wind Tech 12+ సంవత్సరాల అనుభవంతో పునరుత్పాదక శక్తి రంగంలో విశ్వసనీయమైన మరియు సాంకేతికంగా ఆధునిక పరిష్కారాలను అందిస్తోంది.',
+        'SS Wind Tech 32+ సంవత్సరాల అనుభవంతో పునరుత్పాదక శక్తి రంగంలో విశ్వసనీయమైన మరియు సాంకేతికంగా ఆధునిక పరిష్కారాలను అందిస్తోంది.',
       exploreMore: 'మరింత తెలుసుకోండి',
     },
     footer: {
@@ -1953,7 +1953,7 @@ const messages: Record<Locale, Messages> = {
       storyTitle: 'మా కథ',
       story: {
         p1:
-          'SS Wind Tech 12+ సంవత్సరాల పరిశ్రమ అనుభవంతో ప్రముఖ విండ్‌మిల్ సేవా సంస్థగా నిలిచింది. పునరుత్పాదక శక్తి రంగంలో నమ్మకమైన, సాంకేతికంగా అభివృద్ధి చెందిన పరిష్కారాలను అందిస్తుంది. ఇరిక్షన్/ఇన్‌స్టాలేషన్, రీపవరిం, మేక్ చేంజ్, డీకమిషనింగ్, WTG లైఫ్ ఎక్స్‌టెన్షన్ స్టడీస్, ఆపరేషన్ & మెయింటెనెన్స్, క్రేన్-అసిస్టెడ్ సేవలు, అలాగే పూర్తిస్థాయి వర్క్‌షాపులు, ఎలక్ట్రానిక్స్ ల్యాబ్స్, హైడ్రాలిక్ సదుపాయాలతో భాగాల రిపేర్ వర్క్స్‌ను అందిస్తుంది.',
+          'SS Wind Tech 32+ సంవత్సరాల పరిశ్రమ అనుభవంతో ప్రముఖ విండ్‌మిల్ సేవా సంస్థగా నిలిచింది. పునరుత్పాదక శక్తి రంగంలో నమ్మకమైన, సాంకేతికంగా అభివృద్ధి చెందిన పరిష్కారాలను అందిస్తుంది. ఇరిక్షన్/ఇన్‌స్టాలేషన్, రీపవరిం, మేక్ చేంజ్, డీకమిషనింగ్, WTG లైఫ్ ఎక్స్‌టెన్షన్ స్టడీస్, ఆపరేషన్ & మెయింటెనెన్స్, క్రేన్-అసిస్టెడ్ సేవలు, అలాగే పూర్తిస్థాయి వర్క్‌షాపులు, ఎలక్ట్రానిక్స్ ల్యాబ్స్, హైడ్రాలిక్ సదుపాయాలతో భాగాల రిపేర్ వర్క్స్‌ను అందిస్తుంది.',
         p2:
           'విండ్ ఫారమ్ మరియు సోలార్ పవర్ పరిశ్రమలకు SS Wind Tech ఎండ్-టు-ఎండ్ పరిష్కారాలను అందిస్తుంది. ప్రస్తుతం, తమిళనాడులో బలమైన ఉనికితో పాటు కర్ణాటక, ఆంధ్రప్రదేశ్, మహారాష్ట్ర, రాజస్థాన్, గుజరాత్, మధ్యప్రదేశ్ తదితర రాష్ట్రాల్లో సేవల విస్తరణ ఉంది. నమ్మకం, స్థిరమైన పనితీరు మరియు నాణ్యమైన సేవల ఆధారంగా విస్తృత క్లయింట్ బేస్‌ను నిర్మించింది.',
         p3:
@@ -2387,11 +2387,11 @@ const messages: Record<Locale, Messages> = {
     },
     aboutSection: {
       badge: 'हमारे बारे में',
-      titleLine1: '12+ वर्षों का विंड मिल',
+      titleLine1: '32+ वर्षों का विंड मिल',
       titleLine2: 'सेवा उत्कृष्टता',
       titleLine3: 'और नवाचार',
       description:
-        'SS Wind Tech 12+ वर्षों के अनुभव के साथ नवीकरणीय ऊर्जा क्षेत्र में भरोसेमंद और तकनीकी रूप से उन्नत समाधान प्रदान करता है।',
+        'SS Wind Tech 32+ वर्षों के अनुभव के साथ नवीकरणीय ऊर्जा क्षेत्र में भरोसेमंद और तकनीकी रूप से उन्नत समाधान प्रदान करता है।',
       exploreMore: 'और जानें',
     },
     footer: {
@@ -2416,7 +2416,7 @@ const messages: Record<Locale, Messages> = {
       storyTitle: 'हमारी कहानी',
       story: {
         p1:
-          'SS Wind Tech 12+ वर्षों के उद्योग अनुभव के साथ एक अग्रणी विंडमिल सेवा प्रदाता के रूप में स्थापित है। यह नवीकरणीय ऊर्जा क्षेत्र में भरोसेमंद और तकनीकी रूप से उन्नत समाधान प्रदान करता है। कंपनी इरेक्शन और इंस्टॉलेशन, रिपावरिंग, मेक चेंज, डी-कमीशनिंग, WTG लाइफ एक्सटेंशन स्टडीज़, ऑपरेशन एवं मेंटेनेंस, क्रेन-असिस्टेड सेवाएँ और विंडमिल कंपोनेंट्स की रिपेयर वर्क्स जैसी सेवाएँ प्रदान करती है, जिन्हें पूर्ण सुसज्जित वर्कशॉप, इलेक्ट्रॉनिक्स लैब और हाइड्रोलिक सुविधाओं का समर्थन मिलता है।',
+          'SS Wind Tech 32+ वर्षों के उद्योग अनुभव के साथ एक अग्रणी विंडमिल सेवा प्रदाता के रूप में स्थापित है। यह नवीकरणीय ऊर्जा क्षेत्र में भरोसेमंद और तकनीकी रूप से उन्नत समाधान प्रदान करता है। कंपनी इरेक्शन और इंस्टॉलेशन, रिपावरिंग, मेक चेंज, डी-कमीशनिंग, WTG लाइफ एक्सटेंशन स्टडीज़, ऑपरेशन एवं मेंटेनेंस, क्रेन-असिस्टेड सेवाएँ और विंडमिल कंपोनेंट्स की रिपेयर वर्क्स जैसी सेवाएँ प्रदान करती है, जिन्हें पूर्ण सुसज्जित वर्कशॉप, इलेक्ट्रॉनिक्स लैब और हाइड्रोलिक सुविधाओं का समर्थन मिलता है।',
         p2:
           'SS Wind Tech विंड फार्म और सोलर पावर उद्योगों के लिए एंड-टू-एंड समाधान और विविध सेवाएँ प्रदान करता है। वर्तमान में, कंपनी की गतिविधियाँ पूरे देश में फैली हैं—तमिलनाडु में मजबूत उपस्थिति के साथ-साथ कर्नाटक, आंध्र प्रदेश, महाराष्ट्र, राजस्थान, गुजरात, मध्य प्रदेश आदि राज्यों में भी सेवा कवरेज है। भरोसा, निरंतर प्रदर्शन और गुणवत्ता सेवा के आधार पर कंपनी ने व्यापक क्लाइंट बेस बनाया है।',
         p3:
@@ -2850,11 +2850,11 @@ const messages: Record<Locale, Messages> = {
     },
     aboutSection: {
       badge: 'ഞങ്ങളേക്കുറിച്ച്',
-      titleLine1: '12+ വർഷത്തെ വിൻഡ് മിൽ',
+      titleLine1: '32+ വർഷത്തെ വിൻഡ് മിൽ',
       titleLine2: 'സേവന മികവ്',
       titleLine3: 'മറ്റും നവീകരണം',
       description:
-        'SS Wind Tech 12+ വർഷത്തെ അനുഭവത്തോടെ പുനർനവീകരണ ഊർജ്ജ മേഖലയിൽ വിശ്വസനീയവും സാങ്കേതികമായി മുന്നിട്ടിരിക്കുന്ന പരിഹാരങ്ങളും നൽകുന്നു.',
+        'SS Wind Tech 32+ വർഷത്തെ അനുഭവത്തോടെ പുനർനവീകരണ ഊർജ്ജ മേഖലയിൽ വിശ്വസനീയവും സാങ്കേതികമായി മുന്നിട്ടിരിക്കുന്ന പരിഹാരങ്ങളും നൽകുന്നു.',
       exploreMore: 'കൂടുതൽ അറിയുക',
     },
     footer: {
@@ -2879,7 +2879,7 @@ const messages: Record<Locale, Messages> = {
       storyTitle: 'ഞങ്ങളുടെ കഥ',
       story: {
         p1:
-          'SS Wind Tech 12+ വർഷത്തെ വ്യവസായ അനുഭവത്തോടെ പ്രമുഖ വിൻഡ് മിൽ സേവന ദാതാവായി സ്ഥാപിതമാണ്. പുനർനവീകരണ ഊർജ മേഖലയിൽ വിശ്വസനീയവും സാങ്കേതികമായി മുന്നിട്ടിരിക്കുന്ന പരിഹാരങ്ങളും നൽകുന്നു. ഇറെക്ഷൻ & ഇൻസ്റ്റലേഷൻ, റീപവറിംഗ്, മേക്ക് ചേഞ്ച്, ഡി-കമ്മീഷനിംഗ്, WTG ലൈഫ് എക്സ്റ്റൻഷൻ സ്റ്റഡീസ്, ഓപ്പറേഷൻ & പരിപാലനം, ക്രെയിൻ-അസിസ്റ്റഡ് സേവനങ്ങൾ, കൂടാതെ പൂർണ്ണമായും സജ്ജീകരിച്ച വർക്ക്‌ഷോപ്പുകൾ, ഇലക്ട്രോണിക്സ് ലാബുകൾ, ഹൈഡ്രോളിക് സൗകര്യങ്ങൾ എന്നിവയുടെ പിന്തുണയോടെ ഘടക റിപയർ വർക്കുകൾ എന്നിവ ഉൾപ്പെടുന്ന സമഗ്ര സേവനങ്ങൾ കമ്പനി നൽകുന്നു.',
+          'SS Wind Tech 32+ വർഷത്തെ വ്യവസായ അനുഭവത്തോടെ പ്രമുഖ വിൻഡ് മിൽ സേവന ദാതാവായി സ്ഥാപിതമാണ്. പുനർനവീകരണ ഊർജ മേഖലയിൽ വിശ്വസനീയവും സാങ്കേതികമായി മുന്നിട്ടിരിക്കുന്ന പരിഹാരങ്ങളും നൽകുന്നു. ഇറെക്ഷൻ & ഇൻസ്റ്റലേഷൻ, റീപവറിംഗ്, മേക്ക് ചേഞ്ച്, ഡി-കമ്മീഷനിംഗ്, WTG ലൈഫ് എക്സ്റ്റൻഷൻ സ്റ്റഡീസ്, ഓപ്പറേഷൻ & പരിപാലനം, ക്രെയിൻ-അസിസ്റ്റഡ് സേവനങ്ങൾ, കൂടാതെ പൂർണ്ണമായും സജ്ജീകരിച്ച വർക്ക്‌ഷോപ്പുകൾ, ഇലക്ട്രോണിക്സ് ലാബുകൾ, ഹൈഡ്രോളിക് സൗകര്യങ്ങൾ എന്നിവയുടെ പിന്തുണയോടെ ഘടക റിപയർ വർക്കുകൾ എന്നിവ ഉൾപ്പെടുന്ന സമഗ്ര സേവനങ്ങൾ കമ്പനി നൽകുന്നു.',
         p2:
           'വിൻഡ് ഫാം, സോളാർ പവർ മേഖലകൾക്കായി SS Wind Tech എണ്ട്-ടു-എൻഡ് പരിഹാരങ്ങളും വൈവിധ്യമാർന്ന സേവനങ്ങളും നൽകുന്നു. നിലവിൽ, തമിഴ്നാട്ടിൽ ശക്തമായ സാന്നിധ്യത്തോടൊപ്പം കർണാടക, ആന്ധ്രപ്രദേശ്, മഹാരാഷ്ട്ര, രാജസ്ഥാൻ, ഗുജറാത്ത്, മധ്യപ്രദേശ് തുടങ്ങിയ സംസ്ഥാനങ്ങളിലേക്കും സേവനം വ്യാപിപ്പിച്ചിട്ടുണ്ട്. വിശ്വാസം, സ്ഥിരതയുള്ള പ്രകടനം, ഗുണമേന്മയുള്ള സേവനം എന്നിവയുടെ അടിസ്ഥാനം കൊണ്ടാണ് വലിയ ക്ലയന്റ് ബേസ് രൂപപ്പെടുത്തിയത്.',
         p3:

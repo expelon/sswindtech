@@ -132,7 +132,7 @@ export function ChatbotWidget() {
         return "You can find our comprehensive services on the Services page:\n\n📍 Page: /services\n\n• Complete list of all 6 service categories\n• Detailed Service Contracts information\n• Erection & De-erection details\n• On Site Work specifications\n• Solar Power Solutions\n• Crane Services capabilities\n• Safety & Green Practices\n\nThe Services page includes our comprehensive 'Comprehensive Wind Energy Services' section with all detailed information!"
       }
       else if (message.includes('about') || message.includes('company') || message.includes('story')) {
-        return "You can find detailed company information on the About page:\n\n📍 Page: /about\n\n• Our Story and company history\n• Vision, Mission & Goals\n• Leadership team profiles\n• Expertise and capabilities\n• Meet our Directors section\n• ISO certifications and achievements\n\nThe About page provides comprehensive information about SS Wind Tech's 12+ years of experience and operations!"
+        return "You can find detailed company information on the About page:\n\n📍 Page: /about\n\n• Our Story and company history\n• Vision, Mission & Goals\n• Leadership team profiles\n• Expertise and capabilities\n• Meet our Directors section\n• ISO certifications and achievements\n\nThe About page provides comprehensive information about SS Wind Tech's 32+ years of experience and operations!"
       }
       else if (message.includes('contact') || message.includes('reach') || message.includes('get in touch')) {
         return "You can reach us through the Contact page:\n\n📍 Page: /contact\n\n• Contact form for inquiries\n• Complete contact information\n• WhatsApp, phone, and email details\n• Office address and location\n• Service selection options\n\nYou can also call us directly at +91 80984 95874 for immediate assistance!"
@@ -149,7 +149,7 @@ export function ChatbotWidget() {
     
     // Company Information (Check after leadership)
     if (message.includes('about') || message.includes('company')) {
-      return "SS Wind Tech is a leading windmill service provider with 12+ years of industry experience. We deliver reliable solutions across renewable energy with comprehensive services including erection, installation, maintenance, crane services, and solar solutions. Our operations span India with strong presence in Tamil Nadu, Karnataka, Andhra Pradesh, Maharashtra, and other states. We're ISO 9001:2015 & 14001:2015 certified."
+      return "SS Wind Tech is a leading windmill service provider with 32+ years of industry experience. We deliver reliable solutions across renewable energy with comprehensive services including erection, installation, maintenance, crane services, and solar solutions. Our operations span India with strong presence in Tamil Nadu, Karnataka, Andhra Pradesh, Maharashtra, and other states. We're ISO 9001:2015 & 14001:2015 certified."
     }
     
     // Services - Complete overhaul
@@ -233,7 +233,7 @@ export function ChatbotWidget() {
     
     // Client-specific questions
     if (message.includes('dalmia cements') || message.includes('ramco cements') || message.includes('india cements')) {
-      return "Our Cement Industry Clients:\n\n🏭 **Major Cement Companies We Serve**:\n\n• Dalmia Cements\n• Ramco Cements\n• India Cements\n• TVS Srichakra\n• GGPL\n• SSM Group\n• Govindaraja Mills\n• Shanthi Gears\n\n🔧 **Services Provided**: Complete wind turbine maintenance, installation, repair, and O&M services\n\n📊 **Experience**: 12+ years serving cement industry\n\n🏆 **Trust**: Long-term relationships with major cement manufacturers\n\nWe understand the critical nature of cement plant operations and provide reliable services!"
+      return "Our Cement Industry Clients:\n\n🏭 **Major Cement Companies We Serve**:\n\n• Dalmia Cements\n• Ramco Cements\n• India Cements\n• TVS Srichakra\n• GGPL\n• SSM Group\n• Govindaraja Mills\n• Shanthi Gears\n\n🔧 **Services Provided**: Complete wind turbine maintenance, installation, repair, and O&M services\n\n📊 **Experience**: 32+ years serving cement industry\n\n🏆 **Trust**: Long-term relationships with major cement manufacturers\n\nWe understand the critical nature of cement plant operations and provide reliable services!"
     }
     
     // Leadership
