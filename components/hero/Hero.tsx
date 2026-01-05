@@ -63,7 +63,7 @@ export default function Hero() {
                     </div>
                   </a>
                 </button>
-                <Link href="/about" className="px-4 py-2 bg-transparent text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 text-base" style={{border: '2px solid #395674', textShadow: '1px 1px 2px rgba(255, 255, 255, 0.8)'}}>
+                <Link href="/services" className="px-4 py-2 bg-transparent text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 text-base" style={{border: '2px solid #395674', textShadow: '1px 1px 2px rgba(255, 255, 255, 0.8)'}}>
                     {t('hero.exploreMore')}
                     <div className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent" style={{border: '2px solid #395674'}}>
                       <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: '#395674'}} />
@@ -71,7 +71,7 @@ export default function Hero() {
                 </Link>
               </div>
               <div className="hidden lg:block">
-                <Link href="/about" className="px-4 py-2 bg-transparent text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 text-base" style={{border: '2px solid #395674'}}>
+                <Link href="/services" className="px-4 py-2 bg-transparent text-gray-900 rounded-full font-semibold shadow-sm flex items-center gap-2 text-base" style={{border: '2px solid #395674'}}>
                     {t('hero.exploreMore')}
                     <div className="w-6 h-6 rounded-full flex items-center justify-center bg-transparent" style={{border: '2px solid #395674'}}>
                       <ArrowRight className="w-4 h-4 rotate-[-45deg]" style={{color: '#395674'}} />

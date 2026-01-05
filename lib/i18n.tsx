@@ -456,30 +456,7 @@ const messages: Record<Locale, Messages> = {
           expertise: 'Years of windmill expertise',
         },
       },
-      testimonials: {
-        badge: 'Testimonials',
-        items: {
-          0: {
-            quote:
-              "Switching my home to wind energy was one of the best decisions I've made. Now, my home runs efficiently on clean energy, and I feel proud knowing my electricity use supports a sustainable future.",
-            author: 'Priya Sharma',
-            title: 'Homeowner, Mumbai',
-          },
-          1: {
-            quote:
-              'The team at SS WindTech is exceptional. They guided us through every step and the maintenance service is outstanding. Our wind turbine runs perfectly year-round.',
-            author: 'Rajesh Kumar',
-            title: 'Managing Director',
-          },
-          2: {
-            quote:
-              'Installing a windmill from SS WindTech was the best decision for our manufacturing facility. Reliable power and significant cost savings. Excellent service!',
-            author: 'Anjali Patel',
-            title: 'Factory Manager',
-          },
-        },
-      },
-      faq: {
+            faq: {
         title: 'Frequently Asked Questions',
         items: {
           0: {
@@ -956,30 +933,7 @@ const messages: Record<Locale, Messages> = {
           expertise: 'காற்றாலை அனுபவ ஆண்டுகள்',
         },
       },
-      testimonials: {
-        badge: 'வாடிக்கையாளர் கருத்துகள்',
-        items: {
-          0: {
-            quote:
-              'என் வீட்டை காற்று ஆற்றலுக்கு மாற்றியது நான் எடுத்த சிறந்த முடிவுகளில் ஒன்று. இப்போது என் வீடு சுத்த ஆற்றலில் திறமையாக இயங்குகிறது; இது நிலையான எதிர்காலத்திற்கு உதவுகிறது என்பதில் பெருமை.',
-            author: 'பிரியா சர்மா',
-            title: 'வீட்டுத் உரிமையாளர், மும்பை',
-          },
-          1: {
-            quote:
-              'SS WindTech குழு மிக சிறந்தது. ஒவ்வொரு படியிலும் வழிகாட்டினர்; பராமரிப்பு சேவை அருமை. எங்கள் டர்பைன் ஆண்டு முழுவதும் சிறப்பாக இயங்குகிறது.',
-            author: 'ராஜேஷ் குமார்',
-            title: 'மேனேஜிங் டைரக்டர்',
-          },
-          2: {
-            quote:
-              'எங்கள் தொழிற்சாலைக்கான SS WindTech காற்றாலை நிறுவல் சிறந்த முடிவு. நம்பகமான மின்சாரம் மற்றும் கணிசமான செலவு சேமிப்பு. சிறந்த சேவை!',
-            author: 'அஞ்சலி பட்டேல்',
-            title: 'தொழிற்சாலை மேலாளர்',
-          },
-        },
-      },
-      faq: {
+            faq: {
         title: 'அடிக்கடி கேட்கப்படும் கேள்விகள்',
         items: {
           0: {
@@ -1456,29 +1410,6 @@ const messages: Record<Locale, Messages> = {
           expertise: 'ವಿಂಡ್ ಮಿಲ್ ಪರಿಣಿತಿ ವರ್ಷಗಳು',
         },
       },
-      testimonials: {
-        badge: 'ಪ್ರಶಂಸಾಪತ್ರಗಳು',
-        items: {
-          0: {
-            quote:
-              'ನನ್ನ ಮನೆಯನ್ನು ಗಾಳಿ ಶಕ್ತಿಗೆ ಬದಲಾಯಿಸಿದುದು ನಾನು ತೆಗೆದುಕೊಂಡ ಅತ್ಯುತ್ತಮ ನಿರ್ಧಾರಗಳಲ್ಲಿ ಒಂದು. ಈಗ ನನ್ನ ಮನೆ ಸ್ವಚ್ಛ ಶಕ್ತಿಯಲ್ಲಿ ದಕ್ಷವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ; ಇದು ಸ್ಥಿರ ಭವಿಷ್ಯಕ್ಕೆ ಸಹಾಯಕ ಎಂದು ನನಗೆ ಹೆಮ್ಮೆ.',
-            author: 'ಪ್ರಿಯಾ ಶರ್ಮಾ',
-            title: 'ಮನೆಮಾಲೀಕಿ, ಮುಂಬೈ',
-          },
-          1: {
-            quote:
-              'SS WindTech ತಂಡ ಅತ್ಯುತ್ತಮ. ಪ್ರತಿಯೊಂದು ಹಂತದಲ್ಲೂ ಮಾರ್ಗದರ್ಶನ ನೀಡಿದರು, ನಿರ್ವಹಣಾ ಸೇವೆ ಬಹಳ ಉತ್ತಮ. ನಮ್ಮ ಟರ್ಬೈನ್ ವರ್ಷಪೂರ್ತಿ ಉತ್ತಮವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.',
-            author: 'ರಾಜೇಶ್ ಕುಮಾರ್',
-            title: 'ಮ್ಯಾನೇಜಿಂಗ್ ಡೈರೆಕ್ಟರ್',
-          },
-          2: {
-            quote:
-              'ನಮ್ಮ ಉತ್ಪಾದನಾ ಘಟಕಕ್ಕೆ SS WindTech ವಿಂಡ್ ಮಿಲ್ ಸ್ಥಾಪನೆ ಅತ್ಯುತ್ತಮ ನಿರ್ಧಾರ. ನಂಬಿಕೆಬಲವಾದ ವಿದ್ಯುತ್ ಮತ್ತು ಉತ್ತಮ ವೆಚ್ಚ ಉಳಿತಾಯ. ಅద్భುತ ಸೇವೆ!',
-            author: 'ಅಂಜಲಿ ಪಟೇಲ್',
-            title: 'ಫ್ಯಾಕ್ಟರಿ ಮ್ಯಾನೇಜರ್',
-          },
-        },
-      },
       faq: {
         title: 'ಪದೇಪದೇ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳು',
         items: {
@@ -1942,30 +1873,7 @@ const messages: Record<Locale, Messages> = {
           expertise: 'Years of windmill expertise',
         },
       },
-      testimonials: {
-        badge: 'Testimonials',
-        items: {
-          0: {
-            quote:
-              "Switching my home to wind energy was one of the best decisions I've made. Now, my home runs efficiently on clean energy, and I feel proud knowing my electricity use supports a sustainable future.",
-            author: 'Priya Sharma',
-            title: 'Homeowner, Mumbai',
-          },
-          1: {
-            quote:
-              'The team at SS WindTech is exceptional. They guided us through every step and the maintenance service is outstanding. Our wind turbine runs perfectly year-round.',
-            author: 'Rajesh Kumar',
-            title: 'Managing Director',
-          },
-          2: {
-            quote:
-              'Installing a windmill from SS WindTech was the best decision for our manufacturing facility. Reliable power and significant cost savings. Excellent service!',
-            author: 'Anjali Patel',
-            title: 'Factory Manager',
-          },
-        },
-      },
-      faq: {
+            faq: {
         title: 'Frequently Asked Questions',
         items: {
           0: {
@@ -2428,30 +2336,7 @@ const messages: Record<Locale, Messages> = {
           expertise: 'విండ్‌మిల్ నైపుణ్య సంవత్సరాలు',
         },
       },
-      testimonials: {
-        badge: 'టెస్టిమోనియల్స్',
-        items: {
-          0: {
-            quote:
-              'నా ఇంటిని విండ్ ఎనర్జీకి మార్చుకోవడం నేను తీసుకున్న ఉత్తమ నిర్ణయాల్లో ఒకటి. ఇప్పుడు నా ఇల్లు శుభ్రమైన శక్తితో సమర్థవంతంగా నడుస్తోంది; స్థిరమైన భవిష్యత్తుకు నా వినియోగం మద్దతు ఇస్తోంది అని గర్వంగా ఉంది.',
-            author: 'ప్రియా శర్మ',
-            title: 'హోమ్‌ఓనర్, ముంబై',
-          },
-          1: {
-            quote:
-              'SS WindTech టీమ్ అద్భుతం. ప్రతి దశలో మార్గనిర్దేశం చేశారు, మెయింటెనెన్స్ సర్వీస్ చాలా మంచి స్థాయిలో ఉంది. మా టర్బైన్ సంవత్సరం పొడవునా చక్కగా నడుస్తుంది.',
-            author: 'రాజేష్ కుమార్',
-            title: 'మేనేజింగ్ డైరెక్టర్',
-          },
-          2: {
-            quote:
-              'మా తయారీ యూనిట్‌కి SS WindTech విండ్‌మిల్ ఇన్‌స్టాలేషన్ ఉత్తమ నిర్ణయం. నమ్మకమైన పవర్ మరియు గణనీయమైన ఖర్చు ఆదా. అద్భుత సేవ!',
-            author: 'అంజలి పటేల్',
-            title: 'ఫ్యాక్టరీ మేనేజర్',
-          },
-        },
-      },
-      faq: {
+            faq: {
         title: 'తరచుగా అడిగే ప్రశ్నలు',
         items: {
           0: {
@@ -2914,30 +2799,7 @@ const messages: Record<Locale, Messages> = {
           expertise: 'विंडमिल विशेषज्ञता के वर्ष',
         },
       },
-      testimonials: {
-        badge: 'प्रशंसापत्र',
-        items: {
-          0: {
-            quote:
-              'अपने घर को पवन ऊर्जा पर शिफ्ट करना मेरे सबसे अच्छे फैसलों में से एक था। अब मेरा घर स्वच्छ ऊर्जा पर कुशलतापूर्वक चलता है और मुझे गर्व है कि मेरा उपयोग एक टिकाऊ भविष्य का समर्थन करता है।',
-            author: 'प्रिया शर्मा',
-            title: 'गृहस्वामी, मुंबई',
-          },
-          1: {
-            quote:
-              'SS WindTech की टीम बेहतरीन है। उन्होंने हर कदम पर मार्गदर्शन किया और मेंटेनेंस सेवा शानदार है। हमारा टर्बाइन सालभर शानदार चलता है।',
-            author: 'राजेश कुमार',
-            title: 'मैनेजिंग डायरेक्टर',
-          },
-          2: {
-            quote:
-              'हमारे मैन्युफैक्चरिंग प्लांट के लिए SS WindTech का विंडमिल इंस्टॉलेशन बेहतरीन निर्णय था। भरोसेमंद बिजली और बड़ी लागत बचत। उत्कृष्ट सेवा!',
-            author: 'अंजलि पटेल',
-            title: 'फैक्टरी मैनेजर',
-          },
-        },
-      },
-      faq: {
+            faq: {
         title: 'अक्सर पूछे जाने वाले प्रश्न',
         items: {
           0: {
@@ -3400,30 +3262,7 @@ const messages: Record<Locale, Messages> = {
           expertise: 'വിൻഡ്‌മിൽ പരിചയ വർഷങ്ങൾ',
         },
       },
-      testimonials: {
-        badge: 'സാക്ഷ്യങ്ങൾ',
-        items: {
-          0: {
-            quote:
-              'എന്റെ വീട് കാറ്റുഊർജത്തിലേക്ക് മാറ്റിയത് ഞാൻ എടുത്ത മികച്ച തീരുമാനങ്ങളിലൊന്നാണ്. ഇപ്പോൾ എന്റെ വീട് ശുദ്ധ ഊർജത്തിൽ കാര്യക്ഷമമായി പ്രവർത്തിക്കുന്നു; ഇത് സ്ഥിരതയുള്ള ഭാവിക്ക് പിന്തുണയാകുന്നു എന്ന് അറിഞ്ഞ് അഭിമാനിക്കുന്നു.',
-            author: 'പ്രിയ ശർമ്മ',
-            title: 'വീട് ഉടമ, മുംബൈ',
-          },
-          1: {
-            quote:
-              'SS WindTech ടീമിന്റെ സേവനം അതിമനോഹരം. ഓരോ ഘട്ടത്തിലും അവർ മാർഗനിർദേശം നൽകി; പരിപാലന സേവനം ഉന്നത നിലവാരമാണ്. ഞങ്ങളുടെ ടർബൈൻ വർഷം മുഴുവൻ മികച്ച രീതിയിൽ പ്രവർത്തിക്കുന്നു.',
-            author: 'രാജേഷ് കുമാർ',
-            title: 'മാനേജിംഗ് ഡയറക്ടർ',
-          },
-          2: {
-            quote:
-              'ഞങ്ങളുടെ നിർമ്മാണ യൂണിറ്റിന് SS WindTech വിൻഡ്‌മിൽ ഇൻസ്റ്റലേഷൻ മികച്ച തീരുമാനമായിരുന്നു. വിശ്വസനീയമായ വൈദ്യുതിയും വലിയ ചെലവ് ലാഭവും. മികച്ച സേവനം!',
-            author: 'അഞ്ജലി പട്ടേൽ',
-            title: 'ഫാക്ടറി മാനേജർ',
-          },
-        },
-      },
-      faq: {
+            faq: {
         title: 'പതിവായി ചോദിക്കുന്ന ചോദ്യങ്ങൾ',
         items: {
           0: {

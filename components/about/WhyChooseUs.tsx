@@ -99,7 +99,7 @@ export default function WhyChooseUs() {
           </div>
           <div className="text-center">
             <div className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2" style={{ color: '#395674' }}>
-              15MW
+              1.25MW
             </div>
             <p className="text-xs sm:text-sm text-gray-600">
               {t('home.whyChooseUs.stats.capacity')}
