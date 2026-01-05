@@ -161,7 +161,7 @@ export default function AboutPage() {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>20+</div>
                 <div className="text-gray-600">{t('aboutPage.expertiseStats.years')}</div>
@@ -169,10 +169,6 @@ export default function AboutPage() {
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>55kW</div>
                 <div className="text-gray-600">{t('aboutPage.expertiseStats.capacity')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>ISO</div>
-                <div className="text-gray-600">{t('aboutPage.expertiseStats.iso')}</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2" style={{color: '#395674'}}>100%</div>
